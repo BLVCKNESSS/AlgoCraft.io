@@ -15,7 +15,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   // Si le message n'est pas vide
   if (message) {
     // Numéro WhatsApp au format international sans le "+"
-    const phoneNumber = "237683777399"; // ← Remplace par ton numéro
+    const phoneNumber = "237683777399"; // 
 
     // Encode le message pour qu’il soit compatible URL
     const encodedMessage = encodeURIComponent(message);
@@ -60,3 +60,9 @@ function changeSlide(direction) {
 
 // Initialisation
 updateText();
+
+
+// mise a jour 
+// git add .
+// git commit -m "Mise à jour du site"
+// git push
