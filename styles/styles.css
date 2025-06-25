@@ -1,0 +1,463 @@
+/* Réinitialisation de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style général du corps de page */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Barre de navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:#030927;
+  padding: 10px 20px;
+  color: white;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+}
+
+/* Liens de navigation */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Bouton menu pour mobile */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  color: white;
+  border: none;
+}
+
+/* Sections principales */
+.section {
+  padding: 20px;
+}
+
+
+/* Pied de page */
+footer {
+  background: #030927;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+/* Conteneur principal flex */
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: #030927;
+  width: 100%;
+  max-width: 1400px;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+/* Section logo */
+.logo img {
+  margin-top: 15px;
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Section formulaire */
+.form-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Titre */
+h1 {
+  color: #030927;
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Étiquette du champ */
+label {
+    color: white;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Zone de texte */
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  resize: vertical;
+  font-size: 16px;
+}
+
+/* Bouton d'envoi */
+button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.panel-container {
+  max-width: 1200px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+/* Titre encadré gris */
+.panel-title {
+  background-color: #030927;
+  color: white;
+  font-size: 20px;
+  padding: 15px 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Zone de contenu */
+.panel-content {
+  background-color: #f9f9f9;
+  padding: 25px;
+  line-height: 1.7;
+  color: #222;
+}
+
+/* Style des paragraphes */
+.panel-content p {
+  margin-bottom: 20px;
+}
+
+/* Liste ordonnée */
+.panel-content ol {
+  padding-left: 20px;
+}
+
+.panel-content li {
+  margin-bottom: 12px;
+}
+
+
+
+.screenshots-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 30px;
+}
+.screenshot-block:hover {
+    transform: scale(1.02);
+}
+
+/* Image à l'intérieur du bloc */
+.screenshot-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Légende */
+.caption {
+    background-color: #2d3e50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.screenshot-block {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+    width: 30%;
+    min-width: 280px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+}
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.platforms {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: #c0cfe0;
+}
+
+.btn-download {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 25px;
+  background-color: #3399ff;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn-download span {
+  font-size: 0.9rem;
+  display: block;
+}
+
+.btn-download:hover {
+  background-color: #1f7dd1;
+}
+
+.stars {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color: #fff8b0;
+}
+
+.feature-text{
+  display: flex;
+  margin-bottom: 300px;
+}
+
+.feature-textl{
+  display: flex;
+  margin-top: 200px;
+}
+
+.arrow-svg {
+  position: absolute;
+  left: 1px;
+  top: 640px;
+ width: 300px;
+  height: 300px;
+  pointer-events: none;
+}
+
+.arrow-svg-right {
+  position: absolute;
+  right: -40px;
+  top: 550px;
+  width: 300px;
+  height: 300px;
+  pointer-events: none;
+}
+
+/* SECTION FEATURES */
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+  gap: 20px;
+}
+
+
+.body{
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #2f4a60;
+  color: white;
+  line-height: 1.6;
+}
+.feature-text {
+  width: 250px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.feature-image img {
+  display: flex;
+  max-width: 90%;
+  height: 500px;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.carousel_b {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Conteneur du carrousel */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2b2b2b;
+  padding: 30px 10px;
+}
+
+/* Zone du texte */
+.carousel-text {
+  font-size: 1.5rem;
+  text-align: center;
+  flex-grow: 1;
+  padding: 0 20px;
+  max-width: 90%;
+  transition: opacity 0.5s ease;
+}
+
+/* Boutons de navigation */
+.nav {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #aaa;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: color 0.3s;
+}
+
+.nav:hover {
+  color: white;
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 600px) {
+  .panel-title {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .panel-content {
+    padding: 15px;
+  }
+
+  .carousel-text {
+    font-size: 1.1rem;
+  }
+
+  .features {
+  display: flex;
+  flex-wrap: wrap;
+  }
+}
+
+
+
+
+/* Responsive : écran mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #030927;
+  }
+
+  .nav-links a {
+    padding: 10px;
+  }
+
+   .features {
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+    .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-section {
+    width: 100%;
+  }
+
+  .screenshots-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .screenshot-block {
+        width: 90%;
+    }
+
+      .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .btn-download {
+    font-size: 0.9rem;
+    padding: 12px 20px;
+  }
+
+  .feature-text {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+}

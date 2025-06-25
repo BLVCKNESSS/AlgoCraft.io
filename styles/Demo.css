@@ -1,0 +1,264 @@
+/* Réinitialisation de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style général du corps de page */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Barre de navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:#030927;
+  padding: 10px 20px;
+  color: white;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+}
+
+/* Liens de navigation */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Bouton menu pour mobile */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  color: white;
+  border: none;
+}
+
+/* Sections principales */
+.section {
+  padding: 20px;
+}
+
+
+/* Pied de page */
+footer {
+  background: #030927;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Conteneur principal flex */
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: #030927;
+  width: 100%;
+  max-width: 1400px;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+/* Section logo */
+.logo img {
+  margin-top: 15px;
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Section formulaire */
+.form-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Titre */
+h1 {
+  color: #030927;
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Étiquette du champ */
+label {
+    color: white;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Zone de texte */
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  resize: vertical;
+  font-size: 16px;
+}
+
+/* Bouton d'envoi */
+button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.platforms {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: #c0cfe0;
+}
+
+.btn-download {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 25px;
+  background-color: #3399ff;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn-download span {
+  font-size: 0.9rem;
+  display: block;
+}
+
+.btn-download:hover {
+  background-color: #1f7dd1;
+}
+
+.stars {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color: #fff8b0;
+}
+.body{
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #2f4a60;
+  color: white;
+  line-height: 1.6;
+}
+.feature-text {
+  width: 250px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.feature-image img {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+/* Responsive : écran mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #030927;
+  }
+
+  .nav-links a {
+    padding: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+    .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-section {
+    width: 100%;
+  }
+
+  .screenshots-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .screenshot-block {
+        width: 90%;
+    }
+
+      .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .btn-download {
+    font-size: 0.9rem;
+    padding: 12px 20px;
+  }
+
+  .feature-text {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+}
+

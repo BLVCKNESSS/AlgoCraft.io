@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlgoCraft</title>
+  <link rel="stylesheet" href="../styles/Manuel d'utilisateur.css" />
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <header class="navbar">
+     <div class="logo">AlgoCraft</div>
+    <nav class="nav-links" id="nav-links">
+      <a href="../index.html">Accueil</a>
+        <a href="../Pages/Manuel d'utilisateur.html">Manuel d'utilisateur</a>
+          <a href="../Pages/Demo.html">Démo</a>
+      <a href="#message">	&#x2709</a>
+    </nav>
+    <!-- Bouton menu hamburger pour mobile -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <!-- Contenu principal 
+  ohhhhhhhhhhhhhhhhhhhhhhhhhhh page avec demo d'utilisation d'AlgoBox 
+  ohhhhhhhhhhhhhhhhhhhhhhhhhhh page d'accueil d'AlgoCraft
+  -->
+
+  <div class="panel-container">
+    
+    <!-- Titre de la section -->
+     <div class="panel-title">
+      <span> Sommaire </span>
+     </div>
+
+    <!-- Contenu de la section -->
+    <div class="panel-content">
+      <p>Supposons que l'on veuille calculer l'image de n'importe quel réel x par la fonction f définie par f(x)=3x+4.</p>
+      
+      <ol>
+        <li>On déclare d'abord la variable x en cliquant sur Déclarer nouvelle variable. On entre alors x dans le champ Nom de la variable, on s'assure que le type NOMBRE est bien sélectionné et on clique sur "OK".</li>
+        <li>On effectue la même opération avec la variable y.</li>
+        <li>On s'assure que la ligne courante dans le code est bien positionnée sur "DEBUT_ALGORITHME" et on clique alors sur Nouvelle Ligne.</li>
+        <li>Pour pouvoir lire la valeur de x, on clique ensuite sur Ajouter LIRE variable et on s'assure que la variable x est bien sélectionnée avant de cliquer sur "OK".</li>
+        <li>La ligne courante étant bien "LIRE x", on clique sur le bouton Nouvelle Ligne, puis sur le bouton AFFECTER valeur à variable. On sélectionne alors y en face de "La variable" et on entre 3*x+4 dans le champ après "prend la valeur" avant de cliquer sur "OK".</li>
+        <li>Reste à afficher la valeur de y. Pour cela on ajoute une nouvelle ligne après "y PREND_LA_VALEUR 3*x+4" (clic sur le bouton Nouvelle Ligne). On clique alors sur le bouton Ajouter AFFICHER variable et on sélectionne y après "Afficher la variable" avant de cliquer sur "OK".</li>
+        <li>Il n'y a plus qu'à tester l'algorithme en cliquant sur le bouton Tester. Dans la fenêtre qui s'affiche, il suffit alors de cliquer sur le bouton Lancer l'algorithme. On entre alors la valeur de x : son image par la fonction f apparaît alors dans la zone "Résultat". Pour calculer une autre image, il suffit de cliquer à nouveau sur Lancer algorithme. Pour revenir à la fenêtre principale d'AlgoBox, cliquez sur le bouton Fermer.</li>
+      </ol>
+    </div>
+
+  </div>
+
+   <div class="panel-container">
+    
+    <!-- Titre de la section -->
+     <div class="panel-title">
+      <span> 1.Fonctionnement géneral </span>
+     </div>
+
+    <!-- Contenu de la section -->
+    <div class="panel-content">
+      <p>Supposons que l'on veuille calculer l'image de n'importe quel réel x par la fonction f définie par f(x)=3x+4.</p>
+      
+      <ol>
+      <li><strong>Déclarez vos variables</strong> : Cliquez sur <em>Déclarer nouvelle variable</em>, entrez <code>x</code> puis <code>y</code> en gardant le type <strong>NOMBRE</strong>, puis validez.</li>
+
+      <li><strong>Insérez le début de l'algorithme</strong> : Vérifiez que la ligne active est bien <code>DEBUT_ALGORITHME</code>, puis cliquez sur <em>Nouvelle Ligne</em>.</li>
+
+      <li><strong>Lire une valeur de l'utilisateur</strong> : Ajoutez une instruction <code>LIRE x</code> via le bouton <em>Ajouter LIRE variable</em>, puis validez.</li>
+
+      <li><strong>Effectuez le calcul</strong> : Cliquez sur <em>AFFECTER valeur à variable</em>, sélectionnez <code>y</code> et entrez la formule <code>3*x+4</code>, puis validez.</li>
+
+      <li><strong>Affichez le résultat</strong> : Ajoutez une nouvelle ligne, puis insérez <code>AFFICHER y</code> via le bouton correspondant.</li>
+
+      <li><strong>Testez votre algorithme</strong> : Cliquez sur <em>Tester</em>, puis <em>Lancer l’algorithme</em>. Entrez une valeur pour <code>x</code> et observez le résultat s’afficher instantanément.</li>
+
+      <li><strong>Répétez autant de fois que souhaité</strong> : Vous pouvez relancer le test ou revenir à la fenêtre principale via le bouton <em>Fermer</em>.</li>
+    </ol>
+    </div>
+
+  </div>
+
+   <div class="panel-container">
+    
+    <!-- Titre de la section -->
+     <div class="panel-title">
+      <span> 2.Première prise en main d'AlgoCraft avec un exemple très simple </span>
+     </div>
+
+    <!-- Contenu de la section -->
+    <div class="panel-content">
+      <p>Supposons que l'on veuille calculer l'image de n'importe quel réel x par la fonction f définie par f(x)=3x+4.</p>
+      
+      <ol>
+        <li>On déclare d'abord la variable x en cliquant sur Déclarer nouvelle variable. On entre alors x dans le champ Nom de la variable, on s'assure que le type NOMBRE est bien sélectionné et on clique sur "OK".</li>
+        <li>On effectue la même opération avec la variable y.</li>
+        <li>On s'assure que la ligne courante dans le code est bien positionnée sur "DEBUT_ALGORITHME" et on clique alors sur Nouvelle Ligne.</li>
+        <li>Pour pouvoir lire la valeur de x, on clique ensuite sur Ajouter LIRE variable et on s'assure que la variable x est bien sélectionnée avant de cliquer sur "OK".</li>
+        <li>La ligne courante étant bien "LIRE x", on clique sur le bouton Nouvelle Ligne, puis sur le bouton AFFECTER valeur à variable. On sélectionne alors y en face de "La variable" et on entre 3*x+4 dans le champ après "prend la valeur" avant de cliquer sur "OK".</li>
+        <li>Reste à afficher la valeur de y. Pour cela on ajoute une nouvelle ligne après "y PREND_LA_VALEUR 3*x+4" (clic sur le bouton Nouvelle Ligne). On clique alors sur le bouton Ajouter AFFICHER variable et on sélectionne y après "Afficher la variable" avant de cliquer sur "OK".</li>
+        <li>Il n'y a plus qu'à tester l'algorithme en cliquant sur le bouton Tester. Dans la fenêtre qui s'affiche, il suffit alors de cliquer sur le bouton Lancer l'algorithme. On entre alors la valeur de x : son image par la fonction f apparaît alors dans la zone "Résultat". Pour calculer une autre image, il suffit de cliquer à nouveau sur Lancer algorithme. Pour revenir à la fenêtre principale d'AlgoBox, cliquez sur le bouton Fermer.</li>
+      </ol>
+    </div>
+
+  </div>
+
+   <div class="panel-container">
+    
+    <!-- Titre de la section -->
+     <div class="panel-title">
+      <span> 3.Autres règles d'utilisation d'AlgoCraft </span>
+     </div>
+
+    <!-- Contenu de la section -->
+    <div class="panel-content">
+      <p>Supposons que l'on veuille calculer l'image de n'importe quel réel x par la fonction f définie par f(x)=3x+4.</p>
+      
+      <ol>
+        <li>On déclare d'abord la variable x en cliquant sur Déclarer nouvelle variable. On entre alors x dans le champ Nom de la variable, on s'assure que le type NOMBRE est bien sélectionné et on clique sur "OK".</li>
+        <li>On effectue la même opération avec la variable y.</li>
+        <li>On s'assure que la ligne courante dans le code est bien positionnée sur "DEBUT_ALGORITHME" et on clique alors sur Nouvelle Ligne.</li>
+        <li>Pour pouvoir lire la valeur de x, on clique ensuite sur Ajouter LIRE variable et on s'assure que la variable x est bien sélectionnée avant de cliquer sur "OK".</li>
+        <li>La ligne courante étant bien "LIRE x", on clique sur le bouton Nouvelle Ligne, puis sur le bouton AFFECTER valeur à variable. On sélectionne alors y en face de "La variable" et on entre 3*x+4 dans le champ après "prend la valeur" avant de cliquer sur "OK".</li>
+        <li>Reste à afficher la valeur de y. Pour cela on ajoute une nouvelle ligne après "y PREND_LA_VALEUR 3*x+4" (clic sur le bouton Nouvelle Ligne). On clique alors sur le bouton Ajouter AFFICHER variable et on sélectionne y après "Afficher la variable" avant de cliquer sur "OK".</li>
+        <li>Il n'y a plus qu'à tester l'algorithme en cliquant sur le bouton Tester. Dans la fenêtre qui s'affiche, il suffit alors de cliquer sur le bouton Lancer l'algorithme. On entre alors la valeur de x : son image par la fonction f apparaît alors dans la zone "Résultat". Pour calculer une autre image, il suffit de cliquer à nouveau sur Lancer algorithme. Pour revenir à la fenêtre principale d'AlgoBox, cliquez sur le bouton Fermer.</li>
+      </ol>
+    </div>
+
+  </div>
+
+   <div class="panel-container">
+    
+    <!-- Titre de la section -->
+     <div class="panel-title">
+      <span> 4.Raccourcis clavier </span>
+     </div>
+
+    <!-- Contenu de la section -->
+    <div class="panel-content">
+      <p>Supposons que l'on veuille calculer l'image de n'importe quel réel x par la fonction f définie par f(x)=3x+4.</p>
+      
+      <ol>
+        <li>On déclare d'abord la variable x en cliquant sur Déclarer nouvelle variable. On entre alors x dans le champ Nom de la variable, on s'assure que le type NOMBRE est bien sélectionné et on clique sur "OK".</li>
+        <li>On effectue la même opération avec la variable y.</li>
+        <li>On s'assure que la ligne courante dans le code est bien positionnée sur "DEBUT_ALGORITHME" et on clique alors sur Nouvelle Ligne.</li>
+        <li>Pour pouvoir lire la valeur de x, on clique ensuite sur Ajouter LIRE variable et on s'assure que la variable x est bien sélectionnée avant de cliquer sur "OK".</li>
+        <li>La ligne courante étant bien "LIRE x", on clique sur le bouton Nouvelle Ligne, puis sur le bouton AFFECTER valeur à variable. On sélectionne alors y en face de "La variable" et on entre 3*x+4 dans le champ après "prend la valeur" avant de cliquer sur "OK".</li>
+        <li>Reste à afficher la valeur de y. Pour cela on ajoute une nouvelle ligne après "y PREND_LA_VALEUR 3*x+4" (clic sur le bouton Nouvelle Ligne). On clique alors sur le bouton Ajouter AFFICHER variable et on sélectionne y après "Afficher la variable" avant de cliquer sur "OK".</li>
+        <li>Il n'y a plus qu'à tester l'algorithme en cliquant sur le bouton Tester. Dans la fenêtre qui s'affiche, il suffit alors de cliquer sur le bouton Lancer l'algorithme. On entre alors la valeur de x : son image par la fonction f apparaît alors dans la zone "Résultat". Pour calculer une autre image, il suffit de cliquer à nouveau sur Lancer algorithme. Pour revenir à la fenêtre principale d'AlgoBox, cliquez sur le bouton Fermer.</li>
+      </ol>
+    </div>
+   </div>
+
+    <div class="panel-container">
+    
+    <!-- Titre de la section -->
+     <div class="panel-title">
+      <span> 5.Deboguer un algorithme </span>
+     </div>
+
+    <!-- Contenu de la section -->
+    <div class="panel-content">
+      <p>Supposons que l'on veuille calculer l'image de n'importe quel réel x par la fonction f définie par f(x)=3x+4.</p>
+      
+      <ol>
+        <li>On déclare d'abord la variable x en cliquant sur Déclarer nouvelle variable. On entre alors x dans le champ Nom de la variable, on s'assure que le type NOMBRE est bien sélectionné et on clique sur "OK".</li>
+        <li>On effectue la même opération avec la variable y.</li>
+        <li>On s'assure que la ligne courante dans le code est bien positionnée sur "DEBUT_ALGORITHME" et on clique alors sur Nouvelle Ligne.</li>
+        <li>Pour pouvoir lire la valeur de x, on clique ensuite sur Ajouter LIRE variable et on s'assure que la variable x est bien sélectionnée avant de cliquer sur "OK".</li>
+        <li>La ligne courante étant bien "LIRE x", on clique sur le bouton Nouvelle Ligne, puis sur le bouton AFFECTER valeur à variable. On sélectionne alors y en face de "La variable" et on entre 3*x+4 dans le champ après "prend la valeur" avant de cliquer sur "OK".</li>
+        <li>Reste à afficher la valeur de y. Pour cela on ajoute une nouvelle ligne après "y PREND_LA_VALEUR 3*x+4" (clic sur le bouton Nouvelle Ligne). On clique alors sur le bouton Ajouter AFFICHER variable et on sélectionne y après "Afficher la variable" avant de cliquer sur "OK".</li>
+        <li>Il n'y a plus qu'à tester l'algorithme en cliquant sur le bouton Tester. Dans la fenêtre qui s'affiche, il suffit alors de cliquer sur le bouton Lancer l'algorithme. On entre alors la valeur de x : son image par la fonction f apparaît alors dans la zone "Résultat". Pour calculer une autre image, il suffit de cliquer à nouveau sur Lancer algorithme. Pour revenir à la fenêtre principale d'AlgoBox, cliquez sur le bouton Fermer.</li>
+      </ol>
+    </div>
+
+    </div>
+
+    <div class="panel-container">
+    
+    <!-- Titre de la section -->
+     <div class="panel-title">
+      <span> 7.Sécurités lors de l'execution d'un algorithme </span>
+     </div>
+
+    <!-- Contenu de la section -->
+    <div class="panel-content">
+      <p>Supposons que l'on veuille calculer l'image de n'importe quel réel x par la fonction f définie par f(x)=3x+4.</p>
+      
+      <ol>
+        <li>On déclare d'abord la variable x en cliquant sur Déclarer nouvelle variable. On entre alors x dans le champ Nom de la variable, on s'assure que le type NOMBRE est bien sélectionné et on clique sur "OK".</li>
+        <li>On effectue la même opération avec la variable y.</li>
+        <li>On s'assure que la ligne courante dans le code est bien positionnée sur "DEBUT_ALGORITHME" et on clique alors sur Nouvelle Ligne.</li>
+        <li>Pour pouvoir lire la valeur de x, on clique ensuite sur Ajouter LIRE variable et on s'assure que la variable x est bien sélectionnée avant de cliquer sur "OK".</li>
+        <li>La ligne courante étant bien "LIRE x", on clique sur le bouton Nouvelle Ligne, puis sur le bouton AFFECTER valeur à variable. On sélectionne alors y en face de "La variable" et on entre 3*x+4 dans le champ après "prend la valeur" avant de cliquer sur "OK".</li>
+        <li>Reste à afficher la valeur de y. Pour cela on ajoute une nouvelle ligne après "y PREND_LA_VALEUR 3*x+4" (clic sur le bouton Nouvelle Ligne). On clique alors sur le bouton Ajouter AFFICHER variable et on sélectionne y après "Afficher la variable" avant de cliquer sur "OK".</li>
+        <li>Il n'y a plus qu'à tester l'algorithme en cliquant sur le bouton Tester. Dans la fenêtre qui s'affiche, il suffit alors de cliquer sur le bouton Lancer l'algorithme. On entre alors la valeur de x : son image par la fonction f apparaît alors dans la zone "Résultat". Pour calculer une autre image, il suffit de cliquer à nouveau sur Lancer algorithme. Pour revenir à la fenêtre principale d'AlgoBox, cliquez sur le bouton Fermer.</li>
+      </ol>
+    </div>
+</div>
+
+    <div class="panel-container">
+    
+    <!-- Titre de la section -->
+     <div class="panel-title">
+      <span> 8.Simulations de tableaux à deux dimensions </span>
+     </div>
+
+    <!-- Contenu de la section -->
+    <div class="panel-content">
+      <p>Supposons que l'on veuille calculer l'image de n'importe quel réel x par la fonction f définie par f(x)=3x+4.</p>
+      
+      <ol>
+        <li>On déclare d'abord la variable x en cliquant sur Déclarer nouvelle variable. On entre alors x dans le champ Nom de la variable, on s'assure que le type NOMBRE est bien sélectionné et on clique sur "OK".</li>
+        <li>On effectue la même opération avec la variable y.</li>
+        <li>On s'assure que la ligne courante dans le code est bien positionnée sur "DEBUT_ALGORITHME" et on clique alors sur Nouvelle Ligne.</li>
+        <li>Pour pouvoir lire la valeur de x, on clique ensuite sur Ajouter LIRE variable et on s'assure que la variable x est bien sélectionnée avant de cliquer sur "OK".</li>
+        <li>La ligne courante étant bien "LIRE x", on clique sur le bouton Nouvelle Ligne, puis sur le bouton AFFECTER valeur à variable. On sélectionne alors y en face de "La variable" et on entre 3*x+4 dans le champ après "prend la valeur" avant de cliquer sur "OK".</li>
+        <li>Reste à afficher la valeur de y. Pour cela on ajoute une nouvelle ligne après "y PREND_LA_VALEUR 3*x+4" (clic sur le bouton Nouvelle Ligne). On clique alors sur le bouton Ajouter AFFICHER variable et on sélectionne y après "Afficher la variable" avant de cliquer sur "OK".</li>
+        <li>Il n'y a plus qu'à tester l'algorithme en cliquant sur le bouton Tester. Dans la fenêtre qui s'affiche, il suffit alors de cliquer sur le bouton Lancer l'algorithme. On entre alors la valeur de x : son image par la fonction f apparaît alors dans la zone "Résultat". Pour calculer une autre image, il suffit de cliquer à nouveau sur Lancer algorithme. Pour revenir à la fenêtre principale d'AlgoBox, cliquez sur le bouton Fermer.</li>
+      </ol>
+    </div>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- formulaire-------------------------------------------------------------------------------------------- -->
+  <div id="message" class="container">
+    
+    <!-- Section logo -->
+    <div class="logo">
+      <img src="../images/WhatsApp Image 2025-06-17 at 22.01.00_74911c6a.jpg" alt="Logo Algo"> <!-- Remplace logo.png par le vrai nom de ton image -->
+    </div>
+
+    <!-- Section formulaire -->
+    <div class="form-section">
+      <h1>Contact : Laisser un message</h1>
+      <form id="contactForm">
+        <label for="message"><strong>Votre Message</strong></label>
+        <textarea id="message" name="message" placeholder="Écrivez votre message ici..." required></textarea>
+        <button class="btn" type="submit">ENVOYER</button>
+      </form>
+    </div>
+
+  </div>
+ <!-- formulaire-------------------------------------------------------------------------------------------- -->
+
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2025 AlgoCraft. Tous droits réservés.</p>
+  </footer>
+
+
+  <script src="../JS/script.js"></script>
+</body>
+</html>

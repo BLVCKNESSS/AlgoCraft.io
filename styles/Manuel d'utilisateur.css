@@ -1,0 +1,247 @@
+ /* Réinitialisation de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style général du corps de page */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Barre de navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:#030927;
+  padding: 10px 20px;
+  color: white;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+}
+
+/* Liens de navigation */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Bouton menu pour mobile */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  color: white;
+  border: none;
+}
+
+/* Sections principales */
+.section {
+  padding: 20px;
+}
+
+
+/* Pied de page */
+footer {
+  background: #030927;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Formulaire vers zappp **************************************************************************************/
+
+/* Conteneur principal flex */
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: #030927;
+  width: 100%;
+  max-width: 1400px;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+/* Section logo */
+.logo img {
+  margin-top: 15px;
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Section formulaire */
+.form-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Titre */
+h1 {
+  color: #030927;
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Étiquette du champ */
+label {
+    color: white;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Zone de texte */
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  resize: vertical;
+  font-size: 16px;
+}
+
+/* Bouton d'envoi */
+button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+}
+
+.panel-container {
+  max-width: 960px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Responsive: sur écran petit, empile les éléments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-section {
+    width: 100%;
+  }
+}
+
+/* Formulaire vers zappp **************************************************************************************/
+
+
+/* panel information **************************************************************************************/
+
+/* Conteneur principal */
+
+
+/* Titre encadré gris */
+.panel-title {
+  background-color: #030927;
+  color: white;
+  font-size: 20px;
+  padding: 15px 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Zone de contenu */
+.panel-content {
+  background-color: #f9f9f9;
+  padding: 25px;
+  line-height: 1.7;
+  color: #222;
+}
+
+/* Style des paragraphes */
+.panel-content p {
+  margin-bottom: 20px;
+}
+
+/* Liste ordonnée */
+.panel-content ol {
+  padding-left: 20px;
+}
+
+.panel-content li {
+  margin-bottom: 12px;
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 600px) {
+  .panel-title {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .panel-content {
+    padding: 15px;
+   
+  }
+
+  .panel-container{
+     margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+/*  panel information **************************************************************************************/
+
+
+/* Responsive : écran mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #030927;
+  }
+  
+  .panel-container{
+     margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .nav-links a {
+    padding: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}

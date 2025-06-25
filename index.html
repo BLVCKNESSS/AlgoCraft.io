@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlgoCraft</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <header class="navbar">
+    <div class="logo">AlgoCraft</div>
+    <nav class="nav-links" id="nav-links">
+      <a href="./index.html">Accueil</a>
+        <a href="./Pages/Manuel d'utilisateur.html">Manuel d'utilisateur</a>
+          <a href="./Pages/Demo.html">Démo</a>
+      <a href="#message">	&#x2709</a>
+    </nav>
+    <!-- Bouton menu hamburger pour mobile -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <!-- Contenu principal 
+  ohhhhhhhhhhhhhhhhhhhhhhhhhhh page avec demo d'utilisation d'AlgoBox 
+  -->
+  <div class="body">
+  <div class="hero">
+    <h1>AlgoCraft</h1>
+    <p class="subtitle">L'algorithmique et la programmation au lycée et au collège</p>
+    <p class="platforms">(Windows)</p>
+    <a href="#" class="btn-download">TÉLÉCHARGER gratuitement<br><span>version 1.0</span></a>
+    <div class="stars">★★★★★</div>
+  </div>
+
+  <section class="features">
+    <div class="feature-text">
+      <p>Gratuit, libre et facile d'utilisation</p>
+    </div>
+    <!-- Flèches -->
+   <svg class="arrow-svg" viewBox="0 0 300 300">
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="10" 
+              refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L10,5 L0,10 Z" fill="white" />
+      </marker>
+    </defs>
+    <path d="M140,20 Q100,100 250,250" 
+          stroke="white" stroke-width="3" 
+          fill="none" marker-end="url(#arrowhead)" />
+  </svg>
+
+ 
+
+    <div class="feature-image">
+      <img src="./images/Screenshot 2025-06-24 190413.png" alt="Capture AlgoBox">
+    </div>
+
+    <div class="feature-textl">
+      <p>100% conforme aux programmes<br>du lycée et du collège</p>
+    </div>
+  </section>
+
+ <svg class="arrow-svg-right" viewBox="0 0 300 300">
+  <defs>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="10" 
+            refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="white" />
+    </marker>
+  </defs>
+  <path d="M150,250 Q100,100 20,40" 
+        stroke="white" stroke-width="3" 
+        fill="none" marker-end="url(#arrowhead2)" />
+</svg>
+
+</div>
+<div class="carousel_b">
+  <div class="carousel">
+    <button class="nav prev" onclick="changeSlide(-1)">&#10094;</button>
+    <div class="carousel-text" id="carousel-text">
+      <!-- Texte injecté par JavaScript -->
+    </div>
+    <button class="nav next" onclick="changeSlide(1)">&#10095;</button>
+  </div>
+</div>
+
+
+<div class="panel-container">
+    
+    <!-- Titre de la section -->
+    <div class="panel-title">
+      <span> Présentation </span>
+    </div>
+
+    <!-- Contenu de la section -->
+    <div class="panel-content">
+      <p>Supposons que l'on veuille calculer l'image de n'importe quel réel x par la fonction f définie par f(x)=3x+4.</p>
+      
+      <ol>
+        <li>On déclare d'abord la variable x en cliquant sur Déclarer nouvelle variable. On entre alors x dans le champ Nom de la variable, on s'assure que le type NOMBRE est bien sélectionné et on clique sur "OK".</li>
+        <li>On effectue la même opération avec la variable y.</li>
+        <li>On s'assure que la ligne courante dans le code est bien positionnée sur "DEBUT_ALGORITHME" et on clique alors sur Nouvelle Ligne.</li>
+        <li>Pour pouvoir lire la valeur de x, on clique ensuite sur Ajouter LIRE variable et on s'assure que la variable x est bien sélectionnée avant de cliquer sur "OK".</li>
+        <li>La ligne courante étant bien "LIRE x", on clique sur le bouton Nouvelle Ligne, puis sur le bouton AFFECTER valeur à variable. On sélectionne alors y en face de "La variable" et on entre 3*x+4 dans le champ après "prend la valeur" avant de cliquer sur "OK".</li>
+        <li>Reste à afficher la valeur de y. Pour cela on ajoute une nouvelle ligne après "y PREND_LA_VALEUR 3*x+4" (clic sur le bouton Nouvelle Ligne). On clique alors sur le bouton Ajouter AFFICHER variable et on sélectionne y après "Afficher la variable" avant de cliquer sur "OK".</li>
+        <li>Il n'y a plus qu'à tester l'algorithme en cliquant sur le bouton Tester. Dans la fenêtre qui s'affiche, il suffit alors de cliquer sur le bouton Lancer l'algorithme. On entre alors la valeur de x : son image par la fonction f apparaît alors dans la zone "Résultat". Pour calculer une autre image, il suffit de cliquer à nouveau sur Lancer algorithme. Pour revenir à la fenêtre principale d'AlgoBox, cliquez sur le bouton Fermer.</li>
+      </ol>
+    </div>
+
+  </div>
+
+
+  <div class="panel-container">
+    
+    <!-- Titre de la section -->
+    <div class="panel-title">
+      <span> Copies d'ecran</span>
+    </div>
+
+      <div class="screenshots-container">
+
+        <!-- Bloc 1 -->
+        <div class="screenshot-block">
+            <img src="./images/WhatsApp Image 2025-06-17 at 22.01.00_74911c6a.jpg" alt="Fonction locale récursive">
+            <div class="caption">Avec une fonction local récursive.</div>
+        </div>
+
+        <!-- Bloc 2 -->
+        <div class="screenshot-block">
+            <img src="./images/WhatsApp Image 2025-06-17 at 22.01.00_74911c6a.jpg" alt="Édition en mode texte">
+            <div class="caption">Édition du code en mode &quot;éditeur de texte&quot;.</div>
+        </div>
+
+        <!-- Bloc 3 -->
+        <div class="screenshot-block">
+            <img src="./images/WhatsApp Image 2025-06-17 at 22.01.00_74911c6a.jpg" alt="Probabilités">
+            <div class="caption">Exemple d'utilisation en probabilité.</div>
+        </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="panel-container">
+    
+    <!-- Titre de la section -->
+    <div class="panel-title">
+      <span> Caratéristiques </span>
+    </div>
+
+    <!-- Contenu de la section -->
+    <div class="panel-content">
+      <p>Supposons que l'on veuille calculer l'image de n'importe quel réel x par la fonction f définie par f(x)=3x+4.</p>
+      
+      <ol>
+        <li>On déclare d'abord la variable x en cliquant sur Déclarer nouvelle variable. On entre alors x dans le champ Nom de la variable, on s'assure que le type NOMBRE est bien sélectionné et on clique sur "OK".</li>
+        <li>On effectue la même opération avec la variable y.</li>
+        <li>On s'assure que la ligne courante dans le code est bien positionnée sur "DEBUT_ALGORITHME" et on clique alors sur Nouvelle Ligne.</li>
+        <li>Pour pouvoir lire la valeur de x, on clique ensuite sur Ajouter LIRE variable et on s'assure que la variable x est bien sélectionnée avant de cliquer sur "OK".</li>
+        <li>La ligne courante étant bien "LIRE x", on clique sur le bouton Nouvelle Ligne, puis sur le bouton AFFECTER valeur à variable. On sélectionne alors y en face de "La variable" et on entre 3*x+4 dans le champ après "prend la valeur" avant de cliquer sur "OK".</li>
+        <li>Reste à afficher la valeur de y. Pour cela on ajoute une nouvelle ligne après "y PREND_LA_VALEUR 3*x+4" (clic sur le bouton Nouvelle Ligne). On clique alors sur le bouton Ajouter AFFICHER variable et on sélectionne y après "Afficher la variable" avant de cliquer sur "OK".</li>
+        <li>Il n'y a plus qu'à tester l'algorithme en cliquant sur le bouton Tester. Dans la fenêtre qui s'affiche, il suffit alors de cliquer sur le bouton Lancer l'algorithme. On entre alors la valeur de x : son image par la fonction f apparaît alors dans la zone "Résultat". Pour calculer une autre image, il suffit de cliquer à nouveau sur Lancer algorithme. Pour revenir à la fenêtre principale d'AlgoBox, cliquez sur le bouton Fermer.</li>
+      </ol>
+    </div>
+
+  </div>
+
+<!-- formulaire-------------------------------------------------------------------------------------------- -->
+<div id="message" class="container">
+    
+    <!-- Section logo -->
+    <div class="logo">
+      <img src="./images/WhatsApp Image 2025-06-17 at 22.01.00_74911c6a.jpg" alt="Logo Algo"> 
+    </div>
+
+    <!-- Section formulaire -->
+    <div class="form-section">
+      <h1>Contact : Laisser un message</h1>
+      <form id="contactForm">
+        <label for="message"><strong>Votre Message</strong></label>
+        <textarea id="message" name="message" placeholder="Écrivez votre message ici..." required></textarea>
+        <button class="btn" type="submit">ENVOYER</button>
+      </form>
+    </div>
+
+  </div>
+ <!-- formulaire-------------------------------------------------------------------------------------------- -->
+
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2025 AlgoCraft. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Inclusion du script JS -->
+  <script src="./JS/script.js"></script>
+</body>
+</html>
