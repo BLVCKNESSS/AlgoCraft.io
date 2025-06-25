@@ -9,6 +9,8 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  overflow-x: none;
+   overflow-y: none; 
 }
 
 /* Barre de navigation */
@@ -461,3 +463,4 @@ button {
     flex-direction: column;
   }
 }
+ 
