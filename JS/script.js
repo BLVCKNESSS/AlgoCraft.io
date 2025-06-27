@@ -5,33 +5,23 @@ function toggleMenu() {
 }
 
 
-// Quand le formulaire est soumis
 document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault(); // Empêche l'envoi classique
+  e.preventDefault();
 
-  // Récupère la valeur saisie
-  const message = document.getElementById('message').value.trim();
+  const message = document.getElementById('userMessage').value.trim();
 
-  // Si le message n'est pas vide
   if (message) {
-    // Numéro WhatsApp au format international sans le "+"
-    const phoneNumber = "237683777399"; // 
-
-    // Encode le message pour qu’il soit compatible URL
+    const phoneNumber = "237683777399";
     const encodedMessage = encodeURIComponent(message);
-
-    // Crée l’URL WhatsApp
     const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
-    // Ouvre WhatsApp dans un nouvel onglet
     window.open(url, '_blank');
-
-    // Vide le formulaire après l'envoi
     this.reset();
   } else {
     alert("Veuillez écrire un message avant d’envoyer.");
   }
 });
+
 
 // carousel
 const phrases = [

@@ -9,6 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  /* Pour éviter le défilement horizontal */
     overflow-x: hidden;
 }
 
@@ -137,7 +138,7 @@ button {
 }
 
 .panel-container {
-  max-width: 1200px;
+  max-width: 1000px;
   border-radius: 20px;
   border: 1px solid #ccc;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
