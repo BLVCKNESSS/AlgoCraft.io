@@ -9,7 +9,6 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  /* Pour éviter le défilement horizontal */
     overflow-x: hidden;
 }
 
@@ -63,7 +62,6 @@ footer {
   margin-top: 20px;
 }
 
-
 /* Conteneur principal flex */
 .container {
   display: flex;
@@ -85,6 +83,8 @@ footer {
   max-width: 100%;
   height: auto;
 }
+
+
 
 /* Section formulaire */
 .form-section {
@@ -137,92 +137,6 @@ button {
   background-color: #45a049;
 }
 
-.panel-container {
-  max-width: 1000px;
-  border-radius: 20px;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  overflow: hidden;
-  margin: auto;
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
-
-/* Titre encadré gris */
-.panel-title {
-  background-color: #030927;
-  color: white;
-  font-size: 20px;
-  padding: 15px 20px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-
-/* Zone de contenu */
-.panel-content {
-  background-color: #f9f9f9;
-  padding: 25px;
-  line-height: 1.7;
-  color: #222;
-}
-
-/* Style des paragraphes */
-.panel-content p {
-  margin-bottom: 20px;
-}
-
-/* Liste ordonnée */
-.panel-content ol {
-  padding-left: 20px;
-}
-
-.panel-content li {
-  margin-bottom: 12px;
-}
-
-
-
-.screenshots-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-    padding: 30px;
-}
-.screenshot-block:hover {
-    transform: scale(1.02);
-}
-
-/* Image à l'intérieur du bloc */
-.screenshot-block img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Légende */
-.caption {
-    background-color: #2d3e50;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    font-size: 1rem;
-}
-
-.screenshot-block {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    overflow: hidden;
-    width: 30%;
-    min-width: 280px;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.2s ease;
-}
 .hero {
   text-align: center;
   padding: 60px 20px;
@@ -271,53 +185,12 @@ button {
   margin-top: 20px;
   color: #fff8b0;
 }
-
-.feature-text{
-  display: flex;
-  margin-bottom: 300px;
-}
-
-.feature-textl{
-  display: flex;
-  margin-top: 200px;
-}
-
-.arrow-svg {
-  position: absolute;
-  left: 1px;
-  top: 640px;
- width: 300px;
-  height: 300px;
-  pointer-events: none;
-}
-
-.arrow-svg-right {
-  position: absolute;
-  right: -40px;
-  top: 550px;
-  width: 300px;
-  height: 300px;
-  pointer-events: none;
-}
-
-/* SECTION FEATURES */
-.features {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 70px;
-  gap: 20px;
-}
-
-
 .body{
   font-family: 'Segoe UI', sans-serif;
   background-color: #2f4a60;
   color: white;
   line-height: 1.6;
 }
-
 .feature-text {
   width: 250px;
   font-size: 1.1rem;
@@ -325,80 +198,173 @@ button {
 }
 
 .feature-image img {
-  display: flex;
-  max-width: 90%;
-  height: 500px;
+  max-width: 100%;
+  height: auto;
   border: 3px solid white;
   border-radius: 10px;
-  margin: auto;
 }
 
-.carousel_b {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #222;
-  color: #fff;
-}
 
-/* Conteneur du carrousel */
-.carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #2b2b2b;
-  padding: 30px 10px;
-}
 
-/* Zone du texte */
-.carousel-text {
-  font-size: 1.5rem;
+/* body apres le bouton ******************************************************************************* */
+
+/* --- Section Intro --- */
+.intro {
   text-align: center;
-  flex-grow: 1;
-  padding: 0 20px;
-  max-width: 90%;
-  transition: opacity 0.5s ease;
-}
-
-/* Boutons de navigation */
-.nav {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #aaa;
-  cursor: pointer;
-  padding: 0 10px;
-  transition: color 0.3s;
-}
-
-.nav:hover {
+  padding: 50px 20px;
+  background: #2f4a60;
   color: white;
 }
 
-/* Responsive pour petits écrans */
-@media (max-width: 600px) {
-  .panel-title {
-    font-size: 16px;
-    text-align: center;
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* --- Section Équipe --------------------------------------------------- */
+.team {
+  padding: 80px 20px;
+   background: linear-gradient(135deg, #1f3b73, #4a6bb8);
+   /* background: linear-gradient(135deg, #1f3b73, #274a90, #6c8ed9);   */
+  
+  color: #fff;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 1px;
+}
+
+.team-intro {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 1.1rem;
+  color: #cfd9e6;
+}
+
+/* Grille des membres */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 35px;
+}
+
+/* Carte d’un membre */
+.team-member {
+  background: #ffffff;
+  color: #333;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  padding: 25px 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.35);
+}
+
+/* Photo du membre */
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #030927;
+  margin-bottom: 15px;
+}
+
+/* Nom et rôle */
+.team-member h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: #030927;
+}
+
+.role {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+/* Bio */
+.bio {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+/* Liens réseaux sociaux */
+.socials a {
+  display: inline-block;
+  margin: 0 6px;
+  font-size: 1.2rem;
+  background: #030927;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 50%;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.socials a:hover {
+  background: #4b6fe0;
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team h2 {
+    font-size: 2rem;
   }
 
-  .panel-content {
-    padding: 15px;
+  .team-intro {
+    font-size: 1rem;
+    margin-bottom: 35px;
   }
 
-  .carousel-text {
-    font-size: 1.1rem;
-  }
-
-  .features {
-  display: flex;
-  flex-wrap: wrap;
+  .team-member {
+    padding: 20px 15px;
   }
 }
 
+/* Réseaux sociaux *********************************************************************************/
+.socials a {
+  font-size: 1.2rem;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #030927;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #3399ff;
+}
 
 
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+  .team-member img {
+    width: 120px;
+    height: 120px;
+  }
+}
 
-/* Responsive : écran mobile */
+/* ***********************************************************************************/
+
+/* Responsive : écran mobile  *****************************************************************/
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -409,11 +375,6 @@ button {
 
   .nav-links a {
     padding: 10px;
-  }
-
-   .features {
-  display: flex;
-  flex-wrap: wrap;
   }
 
   .menu-toggle {
@@ -464,4 +425,3 @@ button {
     flex-direction: column;
   }
 }
- 
