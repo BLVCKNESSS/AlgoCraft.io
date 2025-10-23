@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AlgoCraft</title>
+  <title>AlgoCraft - Manuel d'utilisateur</title>
   <link rel="stylesheet" href="../styles/Manuel d'utilisateur.css" />
 </head>
 <body>
@@ -12,204 +12,899 @@
     <div class="logo">AlgoCraft</div>
     <nav class="nav-links" id="nav-links">
       <a href="../index.html">Accueil</a>
-        <a href="../Pages/Manuel d'utilisateur.html">Manuel d'utilisateur</a>
-          <a href="../Pages/Demo.html">Démo</a>
-         <a href="../Pages/apropos.html" class="active">À propos</a>
-      <a href="#userMessage">	&#x2709</a>
+      <a href="../Pages/Manuel d'utilisateur.html" class="active">Manuel d'utilisateur</a>
+      <a href="../Pages/Demo.html">Démo</a>
+      <a href="../Pages/apropos.html">À propos</a>
+      <a href="#userMessage">&#x2709</a>
     </nav>
     <!-- Bouton menu hamburger pour mobile -->
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
   </header>
 
-  <!-- Contenu principal 
-  ohhhhhhhhhhhhhhhhhhhhhhhhhhh page avec demo d'utilisation d'AlgoBox 
-  ohhhhhhhhhhhhhhhhhhhhhhhhhhh page d'accueil d'AlgoCraft
-  -->
-
- <div class="panel-container">
-
-  <!-- Titre de la section -->
-  <div class="panel-title">
-    <span>📚 Sommaire</span>
+  <!-- Titre principal -->
+  <div style="text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+    <h1 style="font-size: 2.5em; margin: 0;">📘 Manuel Utilisateur AlgoCraft 2.0</h1>
+    <p style="font-size: 1.2em; margin-top: 10px;">Guide Complet d'Utilisation</p>
   </div>
 
-  <!-- Contenu de la section -->
-  <div class="panel-content">
-    <ol>
-      <li>Fonctionnement général de la classe <code>Fonction</code></li>
-      <li>Première prise en main : création d’une fonction AlgoCraft</li>
-      <li>Règles d’utilisation des fonctions AlgoCraft
-        <ol>
-          <li>Définition du corps de la fonction (texte libre)</li>
-          <li>Déclaration du type de retour (ex : entier, réel, booléen, char)</li>
-          <li>Absence de paramètres supportés dans la version actuelle</li>
-        </ol>
-      </li>
-      <li>Raccourcis clavier liés à l’éditeur AlgoCraft (hors contenu actuel)</li>
-      <li>Tutoriel d’initiation à la déclaration et à l’ajout de fonction</li>
-      <li>Débogage des fonctions écrites en code AlgoCraft libre</li>
-      <li>Sécurités d’exécution lors de l’interprétation dynamique du corps</li>
-      <li>Modularisation du code pour améliorer l’organisation de l’espace de travail</li>
-      <li>Usage potentiel de tableaux ou matrices dans le corps fonctionnel</li>
-      <li>Édition du corps de la fonction en mode texte libre</li>
-      <li>Évolutions futures envisagées
-        <ol>
-          <li>Ajout de paramètres aux fonctions</li>
-          <li>Gestion de la visibilité (public/privé)</li>
-          <li>Surcharge et héritage des fonctions</li>
-        </ol>
-      </li>
-    </ol>
+  <!-- Sommaire -->
+  <div class="panel-container">
+    <div class="panel-title">
+      <span>📚 Table des Matières</span>
+    </div>
+    <div class="panel-content">
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#installation">Installation et Démarrage</a></li>
+        <li><a href="#interface">Interface Utilisateur</a></li>
+        <li><a href="#projets">Gestion des Projets</a></li>
+        <li><a href="#ecriture">Écriture d'Algorithmes</a></li>
+        <li><a href="#structures">Structures de Contrôle</a></li>
+        <li><a href="#fonctions">Fonctions Mathématiques</a></li>
+        <li><a href="#variables">Variables et Types</a></li>
+        <li><a href="#execution">Exécution et Débogage</a></li>
+        <li><a href="#personnalisation">Personnalisation</a></li>
+        <li><a href="#partage">Partage de Code</a></li>
+        <li><a href="#raccourcis">Raccourcis Clavier</a></li>
+        <li><a href="#exemples">Exemples Pratiques</a></li>
+        <li><a href="#depannage">Dépannage</a></li>
+      </ol>
+    </div>
   </div>
 
-</div>
-
-
-<div class="panel-container">
-  <div class="panel-title">
-    <span>1. Fonctionnement général</span>
-  </div>
-  <div class="panel-content">
-    <p>La classe <code>Fonction</code> modélise une fonction utilisateur dans AlgoCraft. Elle contient deux propriétés principales : <code>Corps</code> (le code AlgoCraft sous forme textuelle) et <code>TypeRetour</code> (le type de valeur que la fonction retourne).</p>
-    <p>Ces fonctions sont stockées dynamiquement dans un dictionnaire de l’interpréteur et interprétées lors de leur appel.</p>
-  </div>
-</div>
-
-<div class="panel-container">
-  <div class="panel-title">
-    <span>2. Première prise en main</span>
-  </div>
-  <div class="panel-content">
-    <p>Pour créer une fonction, on instancie simplement la classe <code>Fonction</code> en fournissant le corps sous forme textuelle et le type de retour attendu.</p>
-    <pre><code>var f = new Fonction("RETOURNER x + 1", "entier");</code></pre>
-    <p>La fonction doit ensuite être ajoutée au dictionnaire <code>fonctions</code> de l’interpréteur pour être utilisable.</p>
-  </div>
-</div>
-
-<div class="panel-container">
-  <div class="panel-title">
-    <span>3. Règles d'utilisation</span>
-  </div>
-  <div class="panel-content">
-    <ul>
-      <li><code>TypeRetour</code> doit correspondre à un type AlgoCraft valide (ex : entier, réel, booleen, char).</li>
-      <li><code>Corps</code> contient les instructions AlgoCraft écrites par l’utilisateur, sous forme textuelle, qui seront interprétées dynamiquement.</li>
-      <li>La version actuelle ne supporte pas les paramètres de fonction.</li>
-    </ul>
-  </div>
-</div>
-
-<div class="panel-container">
-  <div class="panel-title">
-    <span>4. Raccourcis clavier</span>
-  </div>
-  <div class="panel-content">
-    <p>Aucun raccourci clavier spécifique n’est défini dans le code fourni, mais les fonctions peuvent être invoquées par des commandes dans l’éditeur AlgoCraft.</p>
-  </div>
-</div>
-
-<div class="panel-container">
-  <div class="panel-title">
-    <span>5. Tutoriel d’initiation</span>
-  </div>
-  <div class="panel-content">
-    <ol>
-      <li>Créer une instance de <code>Fonction</code> avec le corps et le type de retour.</li>
-      <li>Ajouter la fonction au dictionnaire <code>fonctions</code> de l’interpréteur.</li>
-      <li>L’interpréteur exécutera le contenu du corps lors de l’appel de la fonction.</li>
-    </ol>
-  </div>
-</div>
-
-<div class="panel-container">
-  <div class="panel-title">
-    <span>6. Débogage</span>
-  </div>
-  <div class="panel-content">
-    <p>Le corps étant du texte libre, des erreurs syntaxiques ou logiques peuvent apparaître. Il est recommandé d’utiliser un validateur AlgoCraft avant exécution pour assurer la cohérence.</p>
-  </div>
-</div>
-
-<div class="panel-container">
-  <div class="panel-title">
-    <span>7. Sécurités d’exécution</span>
-  </div>
-  <div class="panel-content">
-    <p>L’exécution du texte dans <code>Corps</code> doit être contrôlée pour éviter des comportements inattendus, avec un sandboxing ou des restrictions syntaxiques adaptées.</p>
-  </div>
-</div>
-
-<div class="panel-container">
-  <div class="panel-title">
-    <span>8. Modularisation et espace de travail</span>
-  </div>
-  <div class="panel-content">
-    <p>La modularisation via les fonctions permet de simplifier l’interface principale et d’améliorer la gestion de l’espace de travail dans AlgoCraft.</p>
-  </div>
-</div>
-
-<div class="panel-container">
-  <div class="panel-title">
-    <span>9. Utilisation de tableaux 2D</span>
-  </div>
-  <div class="panel-content">
-    <p>Le corps de la fonction peut contenir des manipulations de tableaux ou matrices, bien que cela ne soit pas géré directement par la classe <code>Fonction</code>.</p>
-  </div>
-</div>
-
-<div class="panel-container">
-  <div class="panel-title">
-    <span>10. Édition en mode texte libre</span>
-  </div>
-  <div class="panel-content">
-    <p>Le corps de la fonction est édité comme un bloc de texte libre en AlgoCraft, puis interprété comme un script lors de l’exécution.</p>
-  </div>
-</div>
-
-<div class="panel-container">
-  <div class="panel-title">
-    <span>11. Extensions futures</span>
-  </div>
-  <div class="panel-content">
-    <p>Des améliorations envisagées incluent :</p>
-    <ul>
-      <li>Ajout de paramètres aux fonctions</li>
-      <li>Définition de la visibilité (public/privé)</li>
-      <li>Gestion de surcharge et héritage via des extensions</li>
-    </ul>
-  </div>
-</div>
-
-
-
-
-  <!-- formulaire -------------------------------------------------------------------------------------------- -->
-<div id="contact-section" class="container">
-
-  <!-- Section logo -->
-  <div class="logo">
-    <img src="../images/logo.jpg" alt="Logo Algo"> 
+  <!-- 1. Introduction -->
+  <div class="panel-container" id="introduction">
+    <div class="panel-title">
+      <span>1. Introduction</span>
+    </div>
+    <div class="panel-content">
+      <h3>Qu'est-ce qu'AlgoCraft ?</h3>
+      <p><strong>AlgoCraft 2.0</strong> est un logiciel libre et multi-plateforme d'aide à l'élaboration et à l'exécution d'algorithmes. Il offre une interface graphique intuitive pour :</p>
+      <ul>
+        <li>✍️ Écrire des algorithmes en pseudo-code</li>
+        <li>▶️ Exécuter et tester votre code</li>
+        <li>🎨 Bénéficier de la coloration syntaxique</li>
+        <li>💡 Utiliser l'auto-complétion intelligente</li>
+        <li>📤 Partager votre travail facilement</li>
+      </ul>
+      
+      <h3>Version</h3>
+      <ul>
+        <li><strong>Version actuelle</strong> : 2.0.0</li>
+        <li><strong>Développé par</strong> : Un groupe d'étudiants</li>
+        <li><strong>Avec la collaboration de</strong> : M. NDJE MAN</li>
+      </ul>
+    </div>
   </div>
 
-  <!-- Section formulaire -->
-  <div class="form-section">
-    <h1>Contact : Laisser un message</h1>
-    <form id="contactForm">
-      <label for="Message"><strong>Votre Message</strong></label>
-      <textarea id="userMessage" name="message" placeholder="Écrivez votre message ici..." required></textarea>
-      <button class="btn" type="submit">ENVOYER</button>
-    </form>
+  <!-- 2. Installation -->
+  <div class="panel-container" id="installation">
+    <div class="panel-title">
+      <span>2. Installation et Démarrage</span>
+    </div>
+    <div class="panel-content">
+      <h3>Configuration Minimale Requise</h3>
+      <ul>
+        <li><strong>Système d'exploitation</strong> : Windows 7/8/10/11</li>
+        <li><strong>Framework</strong> : .NET Framework 4.7.2 ou supérieur</li>
+        <li><strong>Mémoire RAM</strong> : 2 GB minimum</li>
+        <li><strong>Espace disque</strong> : 50 MB</li>
+      </ul>
+      
+      <h3>Premier Lancement</h3>
+      <ol>
+        <li>Lancez <code>AlgoCraft.exe</code></li>
+        <li>L'interface principale s'affiche avec un squelette d'algorithme</li>
+        <li>Vous êtes prêt à coder ! 🚀</li>
+      </ol>
+    </div>
   </div>
 
-</div>
-<!-- formulaire -------------------------------------------------------------------------------------------- -->
+  <!-- 3. Interface -->
+  <div class="panel-container" id="interface">
+    <div class="panel-title">
+      <span>3. Interface Utilisateur</span>
+    </div>
+    <div class="panel-content">
+      <h3>Vue d'ensemble</h3>
+      <pre><code>┌─────────────────────────────────────────────────────────┐
+│  ⚙️ Fichier  Édition  Affichage  Exécuter  Aide        │
+├─────────────────────────────────────────────────────────┤
+│  📁 Nouveau  💾 Enregistrer  ▶️ Tester                  │
+├───────┬─────────────────────────────────────────────────┤
+│  Nº   │  Zone d'édition du code                         │
+│  1    │  Algorithme mon_algo                            │
+│  2    │  Variables                                      │
+│  3    │      x : entier                                 │
+│  4    │  Debut                                          │
+│  5    │      Ecrire("Hello World")                      │
+│  6    │  Fin                                            │
+├───────┴─────────────────────────────────────────────────┤
+│  📺 Console (sortie)                                    │
+│     Hello World                                         │
+├─────────────────────────────────────────────────────────┤
+│  ⚠️ Erreurs                                             │
+└─────────────────────────────────────────────────────────┘</code></pre>
+      
+      <h3>Zones Principales</h3>
+      <ul>
+        <li><strong>🔢 Numérotation des Lignes</strong> : Affichage automatique des numéros de ligne</li>
+        <li><strong>✍️ Éditeur de Code</strong> : Coloration syntaxique en temps réel, auto-complétion</li>
+        <li><strong>📺 Console de Sortie</strong> : Affiche les résultats de <code>Ecrire()</code></li>
+        <li><strong>⚠️ Zone d'Erreurs</strong> : Indique les erreurs avec le numéro de ligne</li>
+      </ul>
+    </div>
+  </div>
 
+  <!-- 4. Gestion des Projets -->
+  <div class="panel-container" id="projets">
+    <div class="panel-title">
+      <span>4. Gestion des Projets</span>
+    </div>
+    <div class="panel-content">
+      <h3>Créer un Nouveau Projet</h3>
+      <p><strong>Menu</strong> : <code>Fichier → Nouveau</code> ou bouton <strong>📁 Nouveau</strong></p>
+      <ol>
+        <li><strong>Nom du projet</strong> : Donnez un nom significatif</li>
+        <li><strong>Emplacement</strong> : Choisissez le dossier de sauvegarde</li>
+        <li><strong>Description</strong> : (Optionnel) Décrivez votre projet</li>
+        <li>Cliquez sur <strong>Créer</strong></li>
+      </ol>
+      <p>Le projet est sauvegardé au format <code>.agc</code> (AlgoCraft)</p>
+      
+      <h3>Ouvrir un Projet Existant</h3>
+      <p><strong>Menu</strong> : <code>Fichier → Ouvrir</code></p>
+      <ol>
+        <li>Naviguez jusqu'au fichier <code>.agc</code></li>
+        <li>Sélectionnez le fichier</li>
+        <li>Cliquez sur <strong>Ouvrir</strong></li>
+      </ol>
+      
+      <h3>Enregistrer</h3>
+      <ul>
+        <li><strong>Enregistrer</strong> : <code>Ctrl + S</code> ou <code>Fichier → Enregistrer</code></li>
+        <li><strong>Enregistrer sous</strong> : <code>Fichier → Enregistrer sous...</code></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 5. Écriture d'Algorithmes -->
+  <div class="panel-container" id="ecriture">
+    <div class="panel-title">
+      <span>5. Écriture d'Algorithmes</span>
+    </div>
+    <div class="panel-content">
+      <h3>Structure de Base</h3>
+      <pre><code>Algorithme nom_de_l_algorithme
+Variables
+    // Déclarations des variables
+    
+Debut
+    // Instructions de l'algorithme
+    
+Fin</code></pre>
+      
+      <h3>Règles de Syntaxe</h3>
+      <p><strong>✅ À FAIRE :</strong></p>
+      <ul>
+        <li>Commencer par <code>Algorithme nom</code></li>
+        <li>Déclarer les variables avant <code>Debut</code></li>
+        <li>Terminer par <code>Fin</code></li>
+        <li>Respecter la casse (majuscules/minuscules)</li>
+      </ul>
+      
+      <p><strong>❌ À ÉVITER :</strong></p>
+      <ul>
+        <li>Oublier les mots-clés <code>Debut</code> et <code>Fin</code></li>
+        <li>Utiliser des variables non déclarées</li>
+        <li>Oublier les guillemets pour les chaînes</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 6. Structures de Contrôle -->
+  <div class="panel-container" id="structures">
+    <div class="panel-title">
+      <span>6. Structures de Contrôle</span>
+    </div>
+    <div class="panel-content">
+      <h3>🔀 Condition Si/Sinon</h3>
+      <pre><code>Si condition Alors
+    // Instructions si vrai
+Sinon
+    // Instructions si faux
+FinSi</code></pre>
+      
+      <p><strong>Exemple :</strong></p>
+      <pre><code>Si age >= 18 Alors
+    Ecrire("Majeur")
+Sinon
+    Ecrire("Mineur")
+FinSi</code></pre>
+      
+      <h3>🔁 Boucle Pour</h3>
+      <pre><code>Pour variable <- debut à fin Faire
+    // Instructions à répéter
+FinPour</code></pre>
+      
+      <p><strong>Exemple :</strong></p>
+      <pre><code>Pour i <- 1 à 10 Faire
+    Ecrire("Nombre : ", i)
+FinPour</code></pre>
+      
+      <h3>🔄 Boucle Tant Que</h3>
+      <pre><code>Tant que condition Faire
+    // Instructions à répéter
+FinTantQue</code></pre>
+      
+      <p><strong>Exemple :</strong></p>
+      <pre><code>Tant que x < 100 Faire
+    x <- x * 2
+    Ecrire(x)
+FinTantQue</code></pre>
+      
+      <h3>🔃 Boucle Répéter</h3>
+      <pre><code>Repeter
+    // Instructions à répéter
+Jusqu'a condition</code></pre>
+      
+      <p><strong>Exemple :</strong></p>
+      <pre><code>Repeter
+    Lire(nombre)
+    Ecrire("Vous avez saisi : ", nombre)
+Jusqu'a nombre = 0</code></pre>
+    </div>
+  </div>
+
+  <!-- 7. Fonctions Mathématiques -->
+  <div class="panel-container" id="fonctions">
+    <div class="panel-title">
+      <span>7. Fonctions Mathématiques</span>
+    </div>
+    <div class="panel-content">
+      <h3>📐 Fonctions à 1 Paramètre</h3>
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+          <tr style="background: #667eea; color: white;">
+            <th style="padding: 10px; border: 1px solid #ddd;">Fonction</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Syntaxe</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Description</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Exemple</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Absolu</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Absolu(x)</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Valeur absolue</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Absolu(-5)</code> → 5</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Racine</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Racine(x)</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Racine carrée</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Racine(16)</code> → 4</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Cos</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Cos(x)</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Cosinus (radians)</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Cos(0)</code> → 1</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Sin</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Sin(x)</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Sinus (radians)</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Sin(0)</code> → 0</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Tan</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Tan(x)</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Tangente (radians)</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Tan(0)</code> → 0</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h3>🔢 Fonctions à 2 Paramètres</h3>
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+          <tr style="background: #764ba2; color: white;">
+            <th style="padding: 10px; border: 1px solid #ddd;">Fonction</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Syntaxe</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Description</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Exemple</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Maximum</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Maximum(x, y)</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Plus grand nombre</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Maximum(10, 20)</code> → 20</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Minimum</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Minimum(x, y)</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Plus petit nombre</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Minimum(10, 20)</code> → 10</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Puissance</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Puissance(x, y)</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">x élevé à la puissance y</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Puissance(2, 3)</code> → 8</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 8. Variables et Types -->
+  <div class="panel-container" id="variables">
+    <div class="panel-title">
+      <span>8. Variables et Types</span>
+    </div>
+    <div class="panel-content">
+      <h3>Déclaration de Variables</h3>
+      <pre><code>Variables
+    nom_variable : type</code></pre>
+      
+      <h3>Types Disponibles</h3>
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+          <tr style="background: #667eea; color: white;">
+            <th style="padding: 10px; border: 1px solid #ddd;">Type</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Description</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Exemple de Valeur</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>entier</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Nombre entier</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">42, -17, 0</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>reel</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Nombre décimal</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">3.14, -0.5, 2.0</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>chaine</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Texte</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">"Bonjour", "AlgoCraft"</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h3>Affectation</h3>
+      <pre><code>variable <- valeur</code></pre>
+      
+      <p><strong>Exemples :</strong></p>
+      <pre><code>Variables
+    age : entier
+    prix : reel
+    nom : chaine
+    
+Debut
+    age <- 25
+    prix <- 19.99
+    nom <- "Alice"
+Fin</code></pre>
+    </div>
+  </div>
+
+  <!-- 9. Exécution et Débogage -->
+  <div class="panel-container" id="execution">
+    <div class="panel-title">
+      <span>9. Exécution et Débogage</span>
+    </div>
+    <div class="panel-content">
+      <h3>Exécuter un Programme</h3>
+      <ol>
+        <li>Écrivez votre algorithme</li>
+        <li>Cliquez sur <strong>▶️ Tester</strong> ou <code>Menu → Exécuter</code></li>
+        <li>Consultez les résultats dans la <strong>Console</strong></li>
+        <li>Vérifiez les éventuelles erreurs dans la <strong>Zone d'erreurs</strong></li>
+      </ol>
+      
+      <h3>Lecture de Données</h3>
+      <pre><code>Lire(variable)</code></pre>
+      <p>Une boîte de dialogue s'affiche pour saisir la valeur.</p>
+      
+      <h3>Affichage de Données</h3>
+      <pre><code>Ecrire(element1, element2, ...)</code></pre>
+      
+      <p><strong>Exemples :</strong></p>
+      <pre><code>Ecrire("Bonjour")
+Ecrire("Résultat : ", x)
+Ecrire("x = ", x, " et y = ", y)</code></pre>
+      
+      <h3>Comprendre les Erreurs</h3>
+      <ul>
+        <li><strong>❌ Variable non déclarée</strong> → Déclarez la variable dans la section <code>Variables</code></li>
+        <li><strong>❌ FinSi manquant</strong> → Ajoutez <code>FinSi</code> après votre bloc conditionnel</li>
+        <li><strong>❌ Syntaxe invalide</strong> → Vérifiez la structure : <code>Si condition Alors</code></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 10. Personnalisation -->
+  <div class="panel-container" id="personnalisation">
+    <div class="panel-title">
+      <span>10. Personnalisation</span>
+    </div>
+    <div class="panel-content">
+      <h3>Thèmes de Couleurs</h3>
+      <p><strong>Menu</strong> : <code>Affichage → Activer le mode sombre</code></p>
+      
+      <ul>
+        <li><strong>🌙 Blue Night</strong> : Fond bleu nuit, idéal pour les sessions nocturnes</li>
+        <li><strong>⚫ Black</strong> : Fond noir pur, contraste maximal</li>
+        <li><strong>☀️ White</strong> : Fond blanc classique, mode par défaut</li>
+      </ul>
+      
+      <h3>Panneaux Latéraux</h3>
+      <ul>
+        <li><strong>🔁 Boucles</strong> : Boutons rapides pour insérer Pour, Tant que, Répéter</li>
+        <li><strong>🧮 Fonctions Mathématiques</strong> : Insertion rapide d'Absolu, Racine, Cos, Sin, Tan, Maximum, Minimum, Puissance</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 11. Partage de Code -->
+  <div class="panel-container" id="partage">
+    <div class="panel-title">
+      <span>11. Partage de Code</span>
+    </div>
+    <div class="panel-content">
+      <h3>Partager votre Algorithme</h3>
+      <p><strong>Menu</strong> : <code>Fichier → Partage</code></p>
+      
+      <h3>📱 Options de Partage</h3>
+      <ol>
+        <li><strong>WhatsApp</strong> : Partage direct sur WhatsApp Web</li>
+        <li><strong>Telegram</strong> : Envoi via Telegram Web</li>
+        <li><strong>Gmail</strong> : Création d'un email avec le code</li>
+      </ol>
+      
+      <h3>📄 Types de Partage</h3>
+      <ul>
+        <li><strong>Code actuel</strong> : Partage le code dans l'éditeur</li>
+        <li><strong>Fichier existant</strong> : Sélectionne un fichier <code>.agc</code> à partager</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 12. Raccourcis Clavier -->
+  <div class="panel-container" id="raccourcis">
+    <div class="panel-title">
+      <span>12. Raccourcis Clavier</span>
+    </div>
+    <div class="panel-content">
+      <h3>Gestion de Fichiers</h3>
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+          <tr style="background: #667eea; color: white;">
+            <th style="padding: 10px; border: 1px solid #ddd;">Raccourci</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + N</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Nouveau projet</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + O</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Ouvrir un fichier</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + S</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Enregistrer</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + Shift + S</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Enregistrer sous</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h3>Édition</h3>
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+          <tr style="background: #764ba2; color: white;">
+            <th style="padding: 10px; border: 1px solid #ddd;">Raccourci</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + C</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Copier ligne</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + X</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Couper ligne</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + V</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Coller ligne</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + A</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Tout sélectionner</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h3>Exécution</h3>
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+          <tr style="background: #667eea; color: white;">
+            <th style="padding: 10px; border: 1px solid #ddd;">Raccourci</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>F5</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Exécuter/Tester</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 13. Exemples Pratiques -->
+  <div class="panel-container" id="exemples">
+    <div class="panel-title">
+      <span>13. Exemples Pratiques</span>
+    </div>
+    <div class="panel-content">
+      <h3>🔢 Exemple 1 : Calcul de Moyenne</h3>
+      <pre><code>Algorithme calcul_moyenne
+Variables
+    note1 : reel
+    note2 : reel
+    note3 : reel
+    moyenne : reel
+    
+Debut
+    Ecrire("=== CALCUL DE MOYENNE ===")
+    
+    Ecrire("Entrez la note 1 :")
+    Lire(note1)
+    
+    Ecrire("Entrez la note 2 :")
+    Lire(note2)
+    
+    Ecrire("Entrez la note 3 :")
+    Lire(note3)
+    
+    moyenne <- (note1 + note2 + note3) / 3
+    
+    Ecrire("Moyenne : ", moyenne)
+    
+    Si moyenne >= 10 Alors
+        Ecrire("ADMIS")
+    Sinon
+        Ecrire("RECALÉ")
+    FinSi
+Fin</code></pre>
+      
+      <h3>🔢 Exemple 2 : Table de Multiplication</h3>
+      <pre><code>Algorithme table_multiplication
+Variables
+    nombre : entier
+    i : entier
+    
+Debut
+    Ecrire("Table de multiplication")
+    Ecrire("Entrez un nombre :")
+    Lire(nombre)
+    
+    Ecrire("===================")
+    Pour i <- 1 à 10 Faire
+        Ecrire(nombre, " x ", i, " = ", nombre * i)
+    FinPour
+Fin</code></pre>
+      
+      <h3>🎲 Exemple 3 : Deviner un Nombre</h3>
+      <pre><code>Algorithme deviner_nombre
+Variables
+    secret : entier
+    essai : entier
+    compteur : entier
+    
+Debut
+    secret <- 42
+    compteur <- 0
+    
+    Ecrire("=== JEU : DEVINEZ LE NOMBRE ===")
+    Ecrire("J'ai choisi un nombre entre 1 et 100")
+    
+    Repeter
+        Ecrire("Votre essai :")
+        Lire(essai)
+        compteur <- compteur + 1
+        
+        Si essai < secret Alors
+            Ecrire("Trop petit !")
+        FinSi
+        
+        Si essai > secret Alors
+            Ecrire("Trop grand !")
+        FinSi
+    Jusqu'a essai = secret
+    
+    Ecrire("BRAVO ! Trouvé en ", compteur, " essais !")
+Fin</code></pre>
+      
+      <h3>📐 Exemple 4 : Calculs Géométriques</h3>
+      <pre><code>Algorithme geometrie
+Variables
+    rayon : reel
+    cote : reel
+    perimetre : reel
+    aire : reel
+    pi : reel
+    
+Debut
+    pi <- 3.14159
+    
+    // Cercle
+    Ecrire("=== CERCLE ===")
+    Ecrire("Rayon du cercle :")
+    Lire(rayon)
+    
+    perimetre <- 2 * pi * rayon
+    aire <- pi * Puissance(rayon, 2)
+    
+    Ecrire("Périmètre : ", perimetre)
+    Ecrire("Aire : ", aire)
+    
+    // Carré
+    Ecrire("")
+    Ecrire("=== CARRÉ ===")
+    Ecrire("Côté du carré :")
+    Lire(cote)
+    
+    perimetre <- 4 * cote
+    aire <- Puissance(cote, 2)
+    
+    Ecrire("Périmètre : ", perimetre)
+    Ecrire("Aire : ", aire)
+Fin</code></pre>
+      
+      <h3>🧮 Exemple 5 : Fonctions Mathématiques</h3>
+      <pre><code>Algorithme test_fonctions_math
+Variables
+    a : entier
+    b : entier
+    resultat : reel
+    
+Debut
+    a <- 16
+    b <- 9
+    
+    // Racine carrée
+    resultat <- Racine(a) + Racine(b)
+    Ecrire("Racine(16) + Racine(9) = ", resultat)
+    
+    // Puissance
+    resultat <- Puissance(2, 5)
+    Ecrire("2^5 = ", resultat)
+    
+    // Maximum
+    resultat <- Maximum(Absolu(-10), Absolu(7))
+    Ecrire("Maximum(|-10|, |7|) = ", resultat)
+    
+    // Minimum
+    resultat <- Minimum(25, 30)
+    Ecrire("Minimum(25, 30) = ", resultat)
+Fin</code></pre>
+    </div>
+  </div>
+
+  <!-- 14. Dépannage -->
+  <div class="panel-container" id="depannage">
+    <div class="panel-title">
+      <span>14. Dépannage</span>
+    </div>
+    <div class="panel-content">
+      <h3>Problèmes Courants</h3>
+      
+      <h4>❓ L'application ne démarre pas</h4>
+      <ul>
+        <li>Vérifiez que .NET Framework 4.7.2+ est installé</li>
+        <li>Exécutez en tant qu'administrateur</li>
+        <li>Vérifiez les fichiers d'installation</li>
+      </ul>
+      
+      <h4>❓ Le code ne s'exécute pas</h4>
+      <ul>
+        <li>Vérifiez la structure : <code>Algorithme ... Debut ... Fin</code></li>
+        <li>Assurez-vous que toutes les variables sont déclarées</li>
+        <li>Regardez les messages d'erreur détaillés</li>
+      </ul>
+      
+      <h4>❓ Les fonctions mathématiques ne fonctionnent pas</h4>
+      <ul>
+        <li>Vérifiez la syntaxe : <code>Maximum(x, y)</code> avec virgule</li>
+        <li>Assurez-vous que les paramètres sont numériques</li>
+        <li>Utilisez des variables déclarées</li>
+      </ul>
+      
+      <h4>❓ L'auto-complétion ne s'affiche pas</h4>
+      <ul>
+        <li>Vérifiez la connexion à la base de données</li>
+        <li>Tapez quelques caractères pour déclencher l'auto-complétion</li>
+        <li>Redémarrez l'application</li>
+      </ul>
+      
+      <h4>❓ Impossible de sauvegarder</h4>
+      <ul>
+        <li>Vérifiez les droits d'accès au dossier</li>
+        <li>Assurez-vous que le disque n'est pas plein</li>
+        <li>Utilisez un chemin sans caractères spéciaux</li>
+      </ul>
+      
+      <h4>❓ Erreurs de syntaxe fréquentes</h4>
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+          <tr style="background: #e74c3c; color: white;">
+            <th style="padding: 10px; border: 1px solid #ddd;">Erreur</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Solution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">Variable 'x' non déclarée</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Ajoutez <code>x : type</code> dans la section Variables</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">FinSi manquant</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Terminez chaque <code>Si</code> par <code>FinSi</code></td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">FinPour manquant</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Terminez chaque <code>Pour</code> par <code>FinPour</code></td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">FinTantQue manquant</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Terminez chaque <code>Tant que</code> par <code>FinTantQue</code></td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">Syntaxe invalide pour Si</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Utilisez : <code>Si condition Alors</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Support et Ressources -->
+  <div class="panel-container">
+    <div class="panel-title">
+      <span>📞 Support et Ressources</span>
+    </div>
+    <div class="panel-content">
+      <h3>Documentation en Ligne</h3>
+      <p>🌐 <strong>Site web</strong> : <a href="https://algo-craft-io.vercel.app/" target="_blank" style="color: #667eea;">https://algo-craft-io.vercel.app/</a></p>
+      
+      <h3>Signaler un Bug</h3>
+      <p>Pour signaler un problème :</p>
+      <ol>
+        <li>Notez le message d'erreur exact</li>
+        <li>Décrivez les étapes pour reproduire le bug</li>
+        <li>Contactez l'équipe de développement via le formulaire ci-dessous</li>
+      </ol>
+      
+      <h3>Contribuer</h3>
+      <p>AlgoCraft est un logiciel libre. Les contributions sont les bienvenues !</p>
+      
+      <h3>Apprendre l'Algorithmique</h3>
+      <p><strong>Conseils pour Débutants :</strong></p>
+      <ol>
+        <li><strong>Commencez simple</strong> : Algorithmes basiques d'abord</li>
+        <li><strong>Testez souvent</strong> : Exécutez régulièrement votre code</li>
+        <li><strong>Lisez les erreurs</strong> : Les messages d'erreur vous guident</li>
+        <li><strong>Expérimentez</strong> : N'ayez pas peur d'essayer</li>
+        <li><strong>Partagez</strong> : Montrez votre travail et apprenez des autres</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Notes de Version -->
+  <div class="panel-container">
+    <div class="panel-title">
+      <span>📝 Notes de Version 2.0.0</span>
+    </div>
+    <div class="panel-content">
+      <h3>✨ Nouvelles fonctionnalités</h3>
+      <ul>
+        <li>Interface graphique modernisée</li>
+        <li>Auto-complétion intelligente avec descriptions</li>
+        <li>Coloration syntaxique améliorée</li>
+        <li>Support des fonctions mathématiques avancées (Absolu, Racine, Cos, Sin, Tan, Maximum, Minimum, Puissance)</li>
+        <li>Partage sur réseaux sociaux (WhatsApp, Telegram, Gmail)</li>
+        <li>Thèmes de couleurs personnalisables (Blue Night, Black, White)</li>
+        <li>Animations fluides pour une meilleure expérience utilisateur</li>
+        <li>Numérotation automatique des lignes</li>
+        <li>Gestion améliorée des projets (.agc)</li>
+      </ul>
+      
+      <h3>🐛 Corrections</h3>
+      <ul>
+        <li>Gestion améliorée des erreurs avec messages explicites</li>
+        <li>Performance optimisée de l'interpréteur</li>
+        <li>Stabilité accrue lors de l'exécution</li>
+        <li>Correction des bugs de sauvegarde</li>
+      </ul>
+      
+      <h3>🔮 Évolutions Futures Envisagées</h3>
+      <ul>
+        <li>Ajout de paramètres aux fonctions personnalisées</li>
+        <li>Gestion de la visibilité (public/privé)</li>
+        <li>Support des tableaux multidimensionnels</li>
+        <li>Débogueur pas à pas</li>
+        <li>Export en différents langages (Python, C++, Java)</li>
+        <li>Mode collaboratif en ligne</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Remerciements -->
+  <div class="panel-container">
+    <div class="panel-title">
+      <span>🙏 Remerciements</span>
+    </div>
+    <div class="panel-content">
+      <p><strong>AlgoCraft 2.0</strong> a été développé avec passion par un groupe d'étudiants.</p>
+      
+      <h3>Remerciements spéciaux à :</h3>
+      <ul>
+        <li><strong>M. NDJE MAN</strong> pour sa précieuse collaboration</li>
+        <li>Tous les utilisateurs pour leurs remarques et suggestions</li>
+        <li>La communauté open-source</li>
+      </ul>
+      
+      <h3>📜 Licence</h3>
+      <p>AlgoCraft est un logiciel libre distribué sous licence ouverte.</p>
+      <p><strong>Copyright © 2025/2026</strong> - Tous droits réservés.</p>
+    </div>
+  </div>
+
+  <!-- Message de fin -->
+  <div style="text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; margin-top: 40px;">
+    <h2 style="font-size: 2em; margin: 0;">Bon coding avec AlgoCraft ! 🚀</h2>
+    <p style="font-size: 1.1em; margin-top: 15px;">Version du manuel : 2.0 - Dernière mise à jour : Octobre 2024</p>
+  </div>
+
+  <!-- Formulaire de contact -->
+  <div id="contact-section" class="container">
+    <!-- Section logo -->
+    <div class="logo">
+      <img src="../images/logo.jpg" alt="Logo Algo"> 
+    </div>
+
+    <!-- Section formulaire -->
+    <div class="form-section">
+      <h1>Contact : Laisser un message</h1>
+      <form id="contactForm">
+        <label for="Message"><strong>Votre Message</strong></label>
+        <textarea id="userMessage" name="message" placeholder="Écrivez votre message ici..." required></textarea>
+        <button class="btn" type="submit">ENVOYER</button>
+      </form>
+    </div>
+  </div>
 
   <!-- Pied de page -->
   <footer>
     <p>&copy; 2025 AlgoCraft. Tous droits réservés.</p>
   </footer>
-
 
   <script src="../JS/script.js"></script>
 </body>
