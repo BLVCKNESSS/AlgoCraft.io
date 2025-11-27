@@ -23,6 +23,7 @@ body {
   color: white;
 }
 
+
 /* -------------------------------------------------
    Navbar qui se cache / se montre au scroll
    ------------------------------------------------- */
@@ -40,6 +41,7 @@ body {
 .navbar.hidden {
     transform: translateY(-110%);   /* -110 % assure qu’il disparaisse même s’il y a un padding */
 }
+
 
 /* Logo */
 .logo {

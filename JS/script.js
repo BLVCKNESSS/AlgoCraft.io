@@ -1,37 +1,41 @@
 
-let lastScrollY = window.pageYOffset;   // position verticale précédente
-let ticking   = false;                  // pour limiter le nombre d'appels (requestAnimationFrame)
+function toggleMenu() {
+    const nav = document.getElementById('nav-links');
+    nav.classList.toggle('show');   // <‑‑ ajoute ou enlève .show
+}
 
-function onScroll() {
+/* -------------------------------------------------
+   2️⃣ NAVBAR – show / hide selon le sens du scroll
+   ------------------------------------------------- */
+let lastScrollY = window.pageYOffset;
+let ticking    = false;
+
+function handleScroll() {
     const currentY = window.pageYOffset;
+    const navbar   = document.querySelector('.navbar');
 
-    // Si on est tout en haut → la navbar doit toujours être visible
+    // Au tout‑top ⇒ toujours visible
     if (currentY <= 0) {
-        document.querySelector('.navbar').classList.remove('hidden');
+        navbar.classList.remove('hidden');
         lastScrollY = 0;
         return;
     }
 
-    // Décide de masquer / afficher
+    // Descendre → masquer, remonter → montrer
     if (currentY > lastScrollY) {
-        // Scroll vers le bas → cacher
-        document.querySelector('.navbar').classList.add('hidden');
+        navbar.classList.add('hidden');
     } else {
-        // Scroll vers le haut → montrer
-        document.querySelector('.navbar').classList.remove('hidden');
+        navbar.classList.remove('hidden');
     }
 
-    // Met à jour la dernière position connue
     lastScrollY = currentY;
 }
 
-/* -------------------------------
-   Optimisation : requestAnimationFrame
-   ------------------------------- */
+/* RequestAnimationFrame = meilleur rendu */
 window.addEventListener('scroll', () => {
     if (!ticking) {
         window.requestAnimationFrame(() => {
-            onScroll();
+            handleScroll();
             ticking = false;
         });
         ticking = true;

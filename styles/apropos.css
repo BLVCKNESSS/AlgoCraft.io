@@ -249,7 +249,7 @@ button {
 /* --- Section Équipe --------------------------------------------------- */
 .team {
   padding: 80px 20px;
-   background: linear-gradient(135deg, #1f3b73, #4a6bb8);
+  /* background: linear-gradient(135deg, #1f3b73, #4a6bb8);*/
    /* background: linear-gradient(135deg, #1f3b73, #274a90, #6c8ed9);   */
   
   color: #fff;

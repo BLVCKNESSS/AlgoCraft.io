@@ -203,15 +203,15 @@
       <h3>Structure de Base Complète</h3>
       <pre><code>Algorithme nom_de_l_algorithme
 // Commentaire sur une ligne
-/*
-  Commentaire multi-lignes
-  Documentation détaillée
-*/
+
 Variables
     variable1 : type
     variable2 : type
+
     // Déclarations multiples
-    var3, var4 : type
+    var3: type
+    var4: type
+    var5: type
     
 Constantes
     PI = 3.14159
@@ -469,24 +469,6 @@ FinPour</code></pre>
             <td style="padding: 10px; border: 1px solid #ddd;">Tangente (radians)</td>
             <td style="padding: 10px; border: 1px solid #ddd;"><code>Tan(0)</code> → 0</td>
           </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Arrondi</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Arrondi(x)</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Arrondi à l'entier</td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Arrondi(3.7)</code> → 4</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Logarithme</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Logarithme(x)</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Logarithme naturel</td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Logarithme(1)</code> → 0</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Exponentielle</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Exponentielle(x)</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Fonction exponentielle</td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Exponentielle(1)</code> → 2.718</td>
-          </tr>
         </tbody>
       </table>
       
@@ -519,32 +501,6 @@ FinPour</code></pre>
             <td style="padding: 10px; border: 1px solid #ddd;">x élevé à la puissance y</td>
             <td style="padding: 10px; border: 1px solid #ddd;"><code>Puissance(2, 3)</code> → 8</td>
           </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Modulo</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Modulo(x, y)</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Reste de la division</td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Modulo(10, 3)</code> → 1</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h4>🎲 Fonctions Spéciales</h4>
-      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-        <thead>
-          <tr style="background: #e53e3e; color: white;">
-            <th style="padding: 10px; border: 1px solid #ddd;">Fonction</th>
-            <th style="padding: 10px; border: 1px solid #ddd;">Syntaxe</th>
-            <th style="padding: 10px; border: 1px solid #ddd;">Description</th>
-            <th style="padding: 10px; border: 1px solid #ddd;">Exemple</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Alea</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Alea()</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Nombre aléatoire 0-1</td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Alea()</code> → 0.784</td>
-          </tr>
         </tbody>
       </table>
     </div>
@@ -562,7 +518,9 @@ FinPour</code></pre>
     nom_variable : type
     
     // Déclarations multiples
-    var1, var2, var3 : type
+     var1 : type
+     var2 : type
+     var3 : type
     
     // Initialisation
     variable : type <- valeur</code></pre>
@@ -694,34 +652,6 @@ Ecrire("Calcul : ", 2 * x + 5)</code></pre>
       <span>14. Raccourcis Clavier</span>
     </div>
     <div class="panel-content">
-      <h3>Gestion de Fichiers</h3>
-      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-        <thead>
-          <tr style="background: #667eea; color: white;">
-            <th style="padding: 10px; border: 1px solid #ddd;">Raccourci</th>
-            <th style="padding: 10px; border: 1px solid #ddd;">Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + N</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Nouveau projet</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + O</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Ouvrir un fichier</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + S</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Enregistrer</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + Shift + S</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Enregistrer sous</td>
-          </tr>
-        </tbody>
-      </table>
-      
       <h3>Édition</h3>
       <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
         <thead>
@@ -761,34 +691,6 @@ Ecrire("Calcul : ", 2 * x + 5)</code></pre>
           </tr>
         </tbody>
       </table>
-      
-      <h3>Exécution et Navigation</h3>
-      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-        <thead>
-          <tr style="background: #667eea; color: white;">
-            <th style="padding: 10px; border: 1px solid #ddd;">Raccourci</th>
-            <th style="padding: 10px; border: 1px solid #ddd;">Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>F5</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Exécuter/Tester</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + F</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Rechercher</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + H</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Remplacer</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + G</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Aller à la ligne</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
   </div>
 
@@ -798,125 +700,279 @@ Ecrire("Calcul : ", 2 * x + 5)</code></pre>
       <span>15. Exemples Pratiques</span>
     </div>
     <div class="panel-content">
-      <h3>🔢 Exemple 1 : Calcul de Moyenne avec Validation</h3>
-      <pre><code>Algorithme calcul_moyenne_avance
+      <h3>🔢 Exemple 1 : Test des fonctions mathématiques</h3>
+      <pre><code>Algorithme test_fonctions_mathematiques
 Variables
-    note1, note2, note3 : reel
-    moyenne : reel
-    
+    a : entier
+    b : entier
+    x : reel
+    y : reel
+    resultat : reel
+
 Debut
-    Ecrire("=== CALCUL DE MOYENNE AVANCÉ ===")
+    // ========================================
+    // TEST 1 : Fonction Absolu (Valeur absolue)
+    // ========================================
+    Ecrire("=== TEST Absolu ===")
+    a <- -15
+    Ecrire("Absolu(-15) = ", Absolu(a))
     
-    Repeter
-        Ecrire("Entrez la note 1 (0-20) :")
-        Lire(note1)
-    Jusqu'a note1 >= 0 ET note1 <= 20
+    a <- 25
+    Ecrire("Absolu(25) = ", Absolu(a))
     
-    Repeter
-        Ecrire("Entrez la note 2 (0-20) :")
-        Lire(note2)
-    Jusqu'a note2 >= 0 ET note2 <= 20
+    x <- -3,14
+    Ecrire("Absolu(-3.14) = ", Absolu(x))
     
-    Repeter
-        Ecrire("Entrez la note 3 (0-20) :")
-        Lire(note3)
-    Jusqu'a note3 >= 0 ET note3 <= 20
+    // ========================================
+    // TEST 2 : Fonction Racine (Racine carrée)
+    // ========================================
+    Ecrire("")
+    Ecrire("=== TEST Racine ===")
+    a <- 16
+    Ecrire("Racine(16) = ", Racine(a))
     
-    moyenne <- (note1 + note2 + note3) / 3
+    a <- 25
+    Ecrire("Racine(25) = ", Racine(a))
     
-    Ecrire("Moyenne : ", Arrondi(moyenne * 100) / 100)
+    a <- 100
+    Ecrire("Racine(100) = ", Racine(a))
     
-    Si moyenne >= 16 Alors
-        Ecrire("🌟 TRÈS BIEN")
-    SinonSi moyenne >= 14 Alors
-        Ecrire("👍 BIEN")
-    SinonSi moyenne >= 12 Alors
-        Ecrire("✅ ASSEZ BIEN")
-    SinonSi moyenne >= 10 Alors
-        Ecrire("➡️ PASSABLE")
-    Sinon
-        Ecrire("❌ INSUFFISANT")
-    FinSi
+    x <- 2,25
+    Ecrire("Racine(2.25) = ", Racine(x))
+    
+    // ========================================
+    // TEST 3 : Fonction Maximum
+    // ========================================
+    Ecrire("")
+    Ecrire("=== TEST Maximum ===")
+    a <- 10
+    b <- 20
+    Ecrire("Maximum(10, 20) = ", Maximum(a, b))
+    
+    a <- 50
+    b <- 30
+    Ecrire("Maximum(50, 30) = ", Maximum(a, b))
+    
+    a <- -5
+    b <- -10
+    Ecrire("Maximum(-5, -10) = ", Maximum(a, b))
+    
+    // ========================================
+    // TEST 4 : Fonction Minimum
+    // ========================================
+    Ecrire("")
+    Ecrire("=== TEST Minimum ===")
+    a <- 10
+    b <- 20
+    Ecrire("Minimum(10, 20) = ", Minimum(a, b))
+    
+    a <- 50
+    b <- 30
+    Ecrire("Minimum(50, 30) = ", Minimum(a, b))
+    
+    a <- -5
+    b <- -10
+    Ecrire("Minimum(-5, -10) = ", Minimum(a, b))
+    
+    // ========================================
+    // TEST 5 : Fonction Puissance
+    // ========================================
+    Ecrire("")
+    Ecrire("=== TEST Puissance ===")
+    a <- 2
+    b <- 3
+    Ecrire("Puissance(2, 3) = ", Puissance(a, b))
+    
+    a <- 5
+    b <- 2
+    Ecrire("Puissance(5, 2) = ", Puissance(a, b))
+    
+    a <- 10
+    b <- 0
+    Ecrire("Puissance(10, 0) = ", Puissance(a, b))
+    
+    a <- 3
+    b <- 4
+    Ecrire("Puissance(3, 4) = ", Puissance(a, b))
+    
+    // ========================================
+    // TEST 6 : Fonctions Trigonométriques
+    // ========================================
+    Ecrire("")
+    Ecrire("=== TEST TRIGONOMETRIE ===")
+    
+    // Angle 0 degré
+    x <- 0
+    Ecrire("Cos(0) = ", Cos(x))
+    Ecrire("Sin(0) = ", Sin(x))
+    Ecrire("Tan(0) = ", Tan(x))
+    
+    // Angle 45 degrés (0.785398 radians ≈ π/4)
+    Ecrire("")
+    x <- 0,785398
+    Ecrire("Cos(45°) = ", Cos(x))
+    Ecrire("Sin(45°) = ", Sin(x))
+    Ecrire("Tan(45°) = ", Tan(x))
+    
+    // ========================================
+    // TEST 7 : Calculs combinés
+    // ========================================
+    Ecrire("")
+    Ecrire("=== TEST CALCULS COMBINES ===")
+    
+    a <- 9
+    b <- 16
+    resultat <- Racine(a) + Racine(b)
+    Ecrire("Racine(9) + Racine(16) = ", resultat)
+    
+    a <- 2
+    b <- 8
+    resultat <- Puissance(a, 3) + Puissance(b, 2)
+    Ecrire("2^3 + 8^2 = ", resultat)
+    
+    a <- -10
+    b <- 15
+    resultat <- Absolu(a) + Maximum(a, b)
+    Ecrire("Absolu(-10) + Maximum(-10, 15) = ", resultat)
+    
+    // ========================================
+    // TEST 8 : Test avec boucle
+    // ========================================
+    Ecrire("")
+    Ecrire("=== CARRE DES 5 PREMIERS NOMBRES ===")
+    Pour a <- 1 à 5 Faire
+        Ecrire(a, " au carré = ", Puissance(a, 2))
+    FinPour
+    
+    // ========================================
+    // TEST 9 : Racines carrées de 1 à 10
+    // ========================================
+    Ecrire("")
+    Ecrire("=== RACINES CARREES DE 1 A 10 ===")
+    Pour a <- 1 à 10 Faire
+        Ecrire("Racine(", a, ") = ", Racine(a))
+    FinPour
+    
+    Ecrire("")
+    Ecrire("=== TOUS LES TESTS SONT TERMINES ===")
+
 Fin</code></pre>
       
-      <h3>🎲 Exemple 2 : Jeu de Devinette Amélioré</h3>
-      <pre><code>Algorithme deviner_nombre_avance
+      <h3>🎲 Exemple 2 : Table de multiplication</h3>
+      <pre><code>Algorithme table_multiplication
 Variables
-    secret, essai, compteur : entier
-    min, max : entier
+    nombre : entier
+    i : entier
     
 Debut
-    min <- 1
-    max <- 100
-    secret <- Alea() * (max - min) + min
-    compteur <- 0
+    Ecrire("Table de multiplication")
+    Ecrire("Entrez un nombre :")
+    Lire(nombre)
     
-    Ecrire("=== JEU : DEVINEZ LE NOMBRE ===")
-    Ecrire("J'ai choisi un nombre entre ", min, " et ", max)
-    
-    Repeter
-        Ecrire("Votre essai (", min, "-", max, ") :")
-        Lire(essai)
-        compteur <- compteur + 1
-        
-        Si essai < secret Alors
-            Ecrire("Trop petit !")
-            min <- Maximum(min, essai + 1)
-        SinonSi essai > secret Alors
-            Ecrire("Trop grand !")
-            max <- Minimum(max, essai - 1)
-        FinSi
-    Jusqu'a essai = secret
-    
-    Ecrire("🎉 BRAVO ! Trouvé en ", compteur, " essais !")
-    
-    Si compteur <= 5 Alors
-        Ecrire("🏆 Excellent !")
-    SinonSi compteur <= 10 Alors
-        Ecrire("👍 Très bien !")
-    Sinon
-        Ecrire("✅ Bien joué !")
-    FinSi
+    Ecrire("===================")
+    Pour i <- 1 à 10 Faire
+        Ecrire(nombre, " x ", i, " = ", nombre * i)
+    FinPour
 Fin</code></pre>
       
-      <h3>🧮 Exemple 3 : Calculs Scientifiques Complets</h3>
-      <pre><code>Algorithme calculs_scientifiques
+      <h3>🧮 Exemple 3 : Racine carré</h3>
+      <pre><code>Algorithme au_carré
 Variables
-    angle, resultat : reel
-    
+i : entier 
 Debut
-    Ecrire("=== CALCULS SCIENTIFIQUES ===")
+Pour i <- 1 à 5 Faire
+    Ecrire( "Carré de " , i , " = " , Puissance(i , 2) )
+FinPour
+Ecrire("=== Fin du programme ===")
+Fin</code></pre>
+
+    <h3>🧮 Exemple 4 : Exemples de base</h3>
+      <pre><code>Algorithme nom_algo
+Variables
+c : entier 
+a : entier 
+b : entier 
+resultat : reel
+Debut
+a <- -9
+b <- 16
+resultat <- Racine( Absolu(a) ) + Racine(b)
+Ecrire(resultat)                      // -> 3 + 4 = 7
+
+c <- Maximum(3 , 7) + Minimum(5 , 2)
+Ecrire(c)                             // -> 7 + 2 = 9
+Fin</code></pre>
+
+    <h3>🧮 Exemple 5 : Tableaux</h3>
+      <pre><code>Algorithme TestSimple
+Variables
+    notes : tableau[4] de entier
+    i : entier
+    j : entier
+Debut
+    // Lecture des notes
+    Ecrire("Entrez 4 notes:")
+    Pour i <- 0 à 3 Faire
+        Ecrire("Note ", i+1, ": ")
+        Lire(notes[i])
+    FinPour
     
-    // Conversion degrés/radians
-    Ecrire("")
-    Ecrire("Conversion d'angles :")
-    angle <- 45
-    Ecrire(angle, " degrés = ", Radians(angle), " radians")
-    Ecrire(Radians(angle), " radians = ", Degres(Radians(angle)), " degrés")
+    // Affichage des notes
+    Ecrire("Les notes saisies sont:")
+    Pour i <- 0 à 3 Faire
+        Ecrire("Note ", i+1, ": ", notes[i])
+    FinPour
     
-    // Fonctions trigonométriques
-    Ecrire("")
-    Ecrire("Fonctions trigonométriques :")
-    resultat <- Sin(Radians(30))
-    Ecrire("Sin(30°) = ", resultat)
-    resultat <- Cos(Radians(60))
-    Ecrire("Cos(60°) = ", resultat)
-    resultat <- Tan(Radians(45))
-    Ecrire("Tan(45°) = ", resultat)
-    
-    // Fonctions avancées
-    Ecrire("")
-    Ecrire("Fonctions avancées :")
-    Ecrire("Racine(144) = ", Racine(144))
-    Ecrire("Puissance(2, 8) = ", Puissance(2, 8))
-    Ecrire("Exponentielle(1) = ", Exponentielle(1))
-    Ecrire("Logarithme(10) = ", Logarithme(10))
-    
-    // Calculs complexes
-    Ecrire("")
-    Ecrire("Calculs complexes :")
-    resultat <- Racine(Puissance(3, 2) + Puissance(4, 2))
-    Ecrire("Racine(3² + 4²) = ", resultat)
+    // Calcul de la moyenne
+    i <- 0
+    j <- 0
+    Pour i <- 0 à 3 Faire
+        j <- j + notes[i]
+    FinPour
+    i <- notes[1] + notes[2]
+
+    Ecrire("Moyenne: ", j / 4)
+    Ecrire(i)
+Fin</code></pre>
+
+  <h3>🧮 Exemple 6 : Procédures</h3>
+      <pre><code>Algorithme Test_Procedures
+
+Procedure AfficherMessage(message:chaine)
+    Ecrire("Message reçu : ", message)
+FinProcedure
+
+Procedure Addition(a:entier, b:entier)
+    somme :entier
+    somme <-a + b
+    Ecrire("La somme de ", a, " et ", b, " est : ", somme)
+FinProcedure
+
+Debut
+    Ecrire("=== Test des procédures ===")
+    AfficherMessage("Bienvenue dans AlgoCraftV !")
+    Addition(5, 7)
+Fin</code></pre>
+
+ <h3>🧮 Exemple 7 : Fonctions</h3>
+      <pre><code>Algorithme TestFonctions
+
+Variables
+    a : entier
+    b : entier
+    resultat : entier
+
+Fonction Addition(x : entier, y : entier) : entier
+    Retour <- x + y
+FinFonction
+
+Debut
+    a <- 10
+    b <- 20
+
+    resultat <- Addition(10, 254)
+
+    Ecrire("Résultat :", resultat)
 Fin</code></pre>
     </div>
   </div>
