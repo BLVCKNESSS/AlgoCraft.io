@@ -46,6 +46,8 @@
         <li><a href="#interface">Interface Utilisateur</a></li>
         <li><a href="#projets">Gestion des Projets</a></li>
         <li><a href="#ecriture">Écriture d'Algorithmes</a></li>
+        <li><a href="#traduction">Traduction Multi-Langages</a></li>
+        <li><a href="#autocompletion">Auto-complétion Intelligente</a></li>
         <li><a href="#structures">Structures de Contrôle</a></li>
         <li><a href="#fonctions">Fonctions Mathématiques</a></li>
         <li><a href="#variables">Variables et Types</a></li>
@@ -66,19 +68,24 @@
     </div>
     <div class="panel-content">
       <h3>Qu'est-ce qu'AlgoCraft ?</h3>
-      <p><strong>AlgoCraft 2.0</strong> est un logiciel libre et multi-plateforme d'aide à l'élaboration et à l'exécution d'algorithmes. Il offre une interface graphique intuitive pour :</p>
+      <p><strong>AlgoCraft 2.0</strong> est une plateforme complète d'apprentissage et de développement algorithmique avec des fonctionnalités avancées :</p>
       <ul>
-        <li>✍️ Écrire des algorithmes en pseudo-code</li>
-        <li>▶️ Exécuter et tester votre code</li>
-        <li>🎨 Bénéficier de la coloration syntaxique</li>
-        <li>💡 Utiliser l'auto-complétion intelligente</li>
-        <li>📤 Partager votre travail facilement</li>
+        <li>✍️ Écrire des algorithmes en pseudo-code avec coloration syntaxique</li>
+        <li>▶️ Exécuter et tester votre code en temps réel</li>
+        <li>💡 Auto-complétion intelligente avec 47 suggestions contextuelles</li>
+        <li>🌍 Traduction vers 4 langages de programmation (C#, C, Java, Python)</li>
+        <li>🧮 17 fonctions mathématiques intégrées</li>
+        <li>🎨 Interface moderne avec thèmes personnalisables</li>
+        <li>📤 Partage facile sur les réseaux sociaux</li>
+        <li>💾 Gestion avancée des projets (.agc)</li>
       </ul>
       
       <h3>Version</h3>
       <ul>
         <li><strong>Version actuelle</strong> : 2.0.0</li>
-        <li><strong>Développé par</strong> : Un groupe d'étudiants</li>
+        <li><strong>Architecture</strong> : Modèle 3 couches (DAL, BLL, UI)</li>
+        <li><strong>Base de données</strong> : SQL Server avec fallback mémoire</li>
+        <li><strong>Développé par</strong> : Un groupe d'étudiants passionnés</li>
         <li><strong>Avec la collaboration de</strong> : M. NDJE MAN</li>
       </ul>
     </div>
@@ -94,14 +101,17 @@
       <ul>
         <li><strong>Système d'exploitation</strong> : Windows 7/8/10/11</li>
         <li><strong>Framework</strong> : .NET Framework 4.7.2 ou supérieur</li>
-        <li><strong>Mémoire RAM</strong> : 2 GB minimum</li>
-        <li><strong>Espace disque</strong> : 50 MB</li>
+        <li><strong>Mémoire RAM</strong> : 2 GB minimum (4 GB recommandé)</li>
+        <li><strong>Espace disque</strong> : 100 MB pour l'application + espace projets</li>
+        <li><strong>Résolution d'écran</strong> : 1280x720 minimum</li>
       </ul>
       
       <h3>Premier Lancement</h3>
       <ol>
         <li>Lancez <code>AlgoCraft.exe</code></li>
-        <li>L'interface principale s'affiche avec un squelette d'algorithme</li>
+        <li>L'interface principale s'affiche avec un éditeur pré-rempli</li>
+        <li>Initialisation automatique de la base de données des suggestions (47 éléments)</li>
+        <li>Configuration des préférences par défaut</li>
         <li>Vous êtes prêt à coder ! 🚀</li>
       </ol>
     </div>
@@ -114,31 +124,38 @@
     </div>
     <div class="panel-content">
       <h3>Vue d'ensemble</h3>
-      <pre><code>┌─────────────────────────────────────────────────────────┐
-│  ⚙️ Fichier  Édition  Affichage  Exécuter  Aide        │
-├─────────────────────────────────────────────────────────┤
-│  📁 Nouveau  💾 Enregistrer  ▶️ Tester                  │
-├───────┬─────────────────────────────────────────────────┤
-│  Nº   │  Zone d'édition du code                         │
-│  1    │  Algorithme mon_algo                            │
-│  2    │  Variables                                      │
-│  3    │      x : entier                                 │
-│  4    │  Debut                                          │
-│  5    │      Ecrire("Hello World")                      │
-│  6    │  Fin                                            │
-├───────┴─────────────────────────────────────────────────┤
-│  📺 Console (sortie)                                    │
-│     Hello World                                         │
-├─────────────────────────────────────────────────────────┤
-│  ⚠️ Erreurs                                             │
-└─────────────────────────────────────────────────────────┘</code></pre>
+      <pre><code>┌─────────────────────────────────────────────────────────────────┐
+│  ⚙️ Fichier  Édition  Affichage  Exécuter  Traduction  Aide    │
+├─────────────────────────────────────────────────────────────────┤
+│  📁 Nouveau  💾 Enregistrer  ▶️ Tester  🌍 Traduire            │
+├───────┬─────────────────────────────────────────────────────────┤
+│  Nº   │  Zone d'édition du code avec coloration syntaxique      │
+│  1    │  Algorithme mon_algo                                   │
+│  2    │  Variables                                             │
+│  3    │      x : entier                                        │
+│  4    │  Debut                                                 │
+│  5    │      Ecrire("Hello World")                             │
+│  6    │  Fin                                                   │
+├───────┴─────────────────────────────────────────────────────────┤
+│  💡 Suggestions (Ctrl+Espace)                                  │
+│     - Si ... Alors ... FinSi                                   │
+│     - Pour ... Faire ... FinPour                               │
+├─────────────────────────────────────────────────────────────────┤
+│  📺 Console de sortie                                          │
+│     Hello World                                                │
+├─────────────────────────────────────────────────────────────────┤
+│  🌍 Traductions disponibles : [C#] [C] [Java] [Python]         │
+│  ⚠️ Zone d'Erreurs et Avertissements                           │
+└─────────────────────────────────────────────────────────────────┘</code></pre>
       
       <h3>Zones Principales</h3>
       <ul>
-        <li><strong>🔢 Numérotation des Lignes</strong> : Affichage automatique des numéros de ligne</li>
-        <li><strong>✍️ Éditeur de Code</strong> : Coloration syntaxique en temps réel, auto-complétion</li>
-        <li><strong>📺 Console de Sortie</strong> : Affiche les résultats de <code>Ecrire()</code></li>
-        <li><strong>⚠️ Zone d'Erreurs</strong> : Indique les erreurs avec le numéro de ligne</li>
+        <li><strong>🔢 Numérotation des Lignes</strong> : Navigation et repérage facilités</li>
+        <li><strong>✍️ Éditeur de Code Intelligent</strong> : Coloration syntaxique contextuelle, indentation automatique</li>
+        <li><strong>💡 Panneau d'Auto-complétion</strong> : Suggestions intelligentes avec descriptions (Ctrl+Espace)</li>
+        <li><strong>📺 Console de Sortie</strong> : Affichage des résultats avec coloration</li>
+        <li><strong>🌍 Sélecteur de Traduction</strong> : Conversion instantanée vers 4 langages</li>
+        <li><strong>⚠️ Zone d'Erreurs Contextuelle</strong> : Diagnostics précis avec numéros de ligne</li>
       </ul>
     </div>
   </div>
@@ -150,27 +167,29 @@
     </div>
     <div class="panel-content">
       <h3>Créer un Nouveau Projet</h3>
-      <p><strong>Menu</strong> : <code>Fichier → Nouveau</code> ou bouton <strong>📁 Nouveau</strong></p>
+      <p><strong>Menu</strong> : <code>Fichier → Nouveau</code> ou bouton <strong>📁 Nouveau</strong> ou <code>Ctrl + N</code></p>
       <ol>
-        <li><strong>Nom du projet</strong> : Donnez un nom significatif</li>
-        <li><strong>Emplacement</strong> : Choisissez le dossier de sauvegarde</li>
-        <li><strong>Description</strong> : (Optionnel) Décrivez votre projet</li>
+        <li><strong>Nom du projet</strong> : Nom significatif (ex: "Calculatrice_Avancée")</li>
+        <li><strong>Emplacement</strong> : Dossier de sauvegarde personnalisable</li>
+        <li><strong>Description</strong> : Documentation intégrée au projet</li>
         <li>Cliquez sur <strong>Créer</strong></li>
       </ol>
-      <p>Le projet est sauvegardé au format <code>.agc</code> (AlgoCraft)</p>
+      <p>Le projet est sauvegardé au format <code>.agc</code> (AlgoCraft) avec métadonnées</p>
       
       <h3>Ouvrir un Projet Existant</h3>
-      <p><strong>Menu</strong> : <code>Fichier → Ouvrir</code></p>
+      <p><strong>Menu</strong> : <code>Fichier → Ouvrir</code> ou <code>Ctrl + O</code></p>
       <ol>
         <li>Naviguez jusqu'au fichier <code>.agc</code></li>
         <li>Sélectionnez le fichier</li>
         <li>Cliquez sur <strong>Ouvrir</strong></li>
       </ol>
       
-      <h3>Enregistrer</h3>
+      <h3>Gestion Avancée des Fichiers</h3>
       <ul>
-        <li><strong>Enregistrer</strong> : <code>Ctrl + S</code> ou <code>Fichier → Enregistrer</code></li>
-        <li><strong>Enregistrer sous</strong> : <code>Fichier → Enregistrer sous...</code></li>
+        <li><strong>Enregistrer</strong> : <code>Ctrl + S</code> - Sauvegarde incrémentale</li>
+        <li><strong>Enregistrer sous</strong> : <code>Ctrl + Shift + S</code> - Nouvelle version</li>
+        <li><strong>Projets Récents</strong> : Accès rapide dans le menu Fichier</li>
+        <li><strong>Export</strong> : Formats PDF, HTML, texte avec syntaxe</li>
       </ul>
     </div>
   </div>
@@ -181,95 +200,235 @@
       <span>5. Écriture d'Algorithmes</span>
     </div>
     <div class="panel-content">
-      <h3>Structure de Base</h3>
+      <h3>Structure de Base Complète</h3>
       <pre><code>Algorithme nom_de_l_algorithme
+// Commentaire sur une ligne
+/*
+  Commentaire multi-lignes
+  Documentation détaillée
+*/
 Variables
-    // Déclarations des variables
+    variable1 : type
+    variable2 : type
+    // Déclarations multiples
+    var3, var4 : type
+    
+Constantes
+    PI = 3.14159
+    NOM = "Valeur"
     
 Debut
     // Instructions de l'algorithme
-    
+    // Blocs structurés
 Fin</code></pre>
       
-      <h3>Règles de Syntaxe</h3>
-      <p><strong>✅ À FAIRE :</strong></p>
+      <h3>Règles de Syntaxe Étendues</h3>
+      <p><strong>✅ BONNES PRATIQUES :</strong></p>
       <ul>
-        <li>Commencer par <code>Algorithme nom</code></li>
-        <li>Déclarer les variables avant <code>Debut</code></li>
-        <li>Terminer par <code>Fin</code></li>
-        <li>Respecter la casse (majuscules/minuscules)</li>
+        <li>Commencez par <code>Algorithme nom_significatif</code></li>
+        <li>Déclarez toutes les variables avant <code>Debut</code></li>
+        <li>Utilisez la section <code>Constantes</code> pour les valeurs fixes</li>
+        <li>Commentez abondamment avec <code>//</code> et <code>/* */</code></li>
+        <li>Respectez l'indentation pour la lisibilité</li>
+        <li>Terminez chaque bloc par son mot-clé de fin</li>
       </ul>
       
-      <p><strong>❌ À ÉVITER :</strong></p>
+      <p><strong>❌ ERREURS FRÉQUENTES :</strong></p>
       <ul>
-        <li>Oublier les mots-clés <code>Debut</code> et <code>Fin</code></li>
-        <li>Utiliser des variables non déclarées</li>
-        <li>Oublier les guillemets pour les chaînes</li>
+        <li>Oublier <code>Debut</code> ou <code>Fin</code></li>
+        <li>Variables utilisées avant déclaration</li>
+        <li>Guillemets manquants autour des chaînes</li>
+        <li>Mots-clés mal orthographiés</li>
+        <li>Blocs non fermés (<code>FinSi</code>, <code>FinPour</code> manquants)</li>
       </ul>
+    </div>
+  </div>
+
+  <!-- NOUVELLE SECTION : Traduction Multi-Langages -->
+  <div class="panel-container" id="traduction">
+    <div class="panel-title">
+      <span>6. 🌍 Traduction Multi-Langages</span>
+    </div>
+    <div class="panel-content">
+      <h3>Système de Traduction Intelligent</h3>
+      <p>AlgoCraft 2.0 inclut un système de traduction avancé vers 4 langages de programmation :</p>
+      
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+          <tr style="background: #667eea; color: white;">
+            <th style="padding: 10px; border: 1px solid #ddd;">Langage</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Type</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Utilisation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>C#</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Orienté objet</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Applications .NET, Windows</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>C</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Procédural</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Système, performances</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Java</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Cross-platform</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Applications multiplateformes</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Python</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Scripting</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Data science, rapid prototyping</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h3>Utilisation de la Traduction</h3>
+      <ol>
+        <li>Écrivez votre algorithme en pseudo-code</li>
+        <li>Cliquez sur <strong>🌍 Traduire</strong> ou <code>Menu → Traduction</code></li>
+        <li>Sélectionnez le langage cible</li>
+        <li>Le code traduit s'affiche dans une nouvelle fenêtre</li>
+        <li>Copiez-collez ou exportez le code généré</li>
+      </ol>
+      
+      <h3>Exemple de Traduction</h3>
+      <p><strong>Pseudo-code original :</strong></p>
+      <pre><code>Algorithme calcul_moyenne
+Variables
+    note1, note2, note3 : reel
+    moyenne : reel
+Debut
+    Ecrire("Entrez 3 notes :")
+    Lire(note1, note2, note3)
+    moyenne <- (note1 + note2 + note3) / 3
+    Ecrire("Moyenne : ", moyenne)
+Fin</code></pre>
+      
+      <p><strong>Traduction en Python :</strong></p>
+      <pre><code># AlgoCraft Traduction - Python
+def main():
+    print("Entrez 3 notes :")
+    note1 = float(input())
+    note2 = float(input())
+    note3 = float(input())
+    moyenne = (note1 + note2 + note3) / 3
+    print(f"Moyenne : {moyenne}")
+
+if __name__ == "__main__":
+    main()</code></pre>
+    </div>
+  </div>
+
+  <!-- NOUVELLE SECTION : Auto-complétion Intelligente -->
+  <div class="panel-container" id="autocompletion">
+    <div class="panel-title">
+      <span>7. 💡 Auto-complétion Intelligente</span>
+    </div>
+    <div class="panel-content">
+      <h3>Système d'Aide Contextuelle</h3>
+      <p>AlgoCraft propose 47 suggestions intelligentes classées en catégories :</p>
+      
+      <h4>Catégories de Suggestions</h4>
+      <ul>
+        <li><strong>🏗️ Structures de Contrôle</strong> : Si, Pour, Tant que, Répéter</li>
+        <li><strong>🧮 Fonctions Mathématiques</strong> : Absolu, Racine, Cos, Sin, Puissance...</li>
+        <li><strong>📊 Déclarations Variables</strong> : Types entier, reel, chaine, booléen</li>
+        <li><strong>🔧 Opérations E/S</strong> : Ecrire, Lire avec formats variés</li>
+        <li><strong>🎯 Patterns Courants</strong> : Boucles, conditions, calculs standards</li>
+      </ul>
+      
+      <h3>Utilisation de l'Auto-complétion</h3>
+      <ol>
+        <li>Commencez à taper dans l'éditeur</li>
+        <li>Appuyez sur <code>Ctrl + Espace</code> pour forcer l'affichage</li>
+        <li>Parcourez les suggestions avec ↑ et ↓</li>
+        <li>Sélectionnez avec Entrée ou cliquez</li>
+        <li>La suggestion est insérée avec les placeholders</li>
+      </ol>
+      
+      <h3>Exemples de Suggestions</h3>
+      <pre><code>// Tapez "si" puis Ctrl+Espace :
+Si condition Alors
+    │
+FinSi
+
+// Tapez "pour" puis Ctrl+Espace :
+Pour i <- 1 à n Faire
+    │
+FinPour
+
+// Tapez "ecrire" puis Ctrl+Espace :
+Ecrire("│")</code></pre>
     </div>
   </div>
 
   <!-- 6. Structures de Contrôle -->
   <div class="panel-container" id="structures">
     <div class="panel-title">
-      <span>6. Structures de Contrôle</span>
+      <span>8. Structures de Contrôle</span>
     </div>
     <div class="panel-content">
-      <h3>🔀 Condition Si/Sinon</h3>
+      <h3>🔀 Condition Si/Sinon/SinonSi</h3>
       <pre><code>Si condition Alors
     // Instructions si vrai
+SinonSi autre_condition Alors
+    // Instructions si autre condition vraie
 Sinon
-    // Instructions si faux
+    // Instructions si toutes fausses
 FinSi</code></pre>
       
-      <p><strong>Exemple :</strong></p>
-      <pre><code>Si age >= 18 Alors
-    Ecrire("Majeur")
-Sinon
+      <p><strong>Exemple Complet :</strong></p>
+      <pre><code>Si age < 18 Alors
     Ecrire("Mineur")
+SinonSi age < 65 Alors
+    Ecrire("Adulte")
+Sinon
+    Ecrire("Senior")
 FinSi</code></pre>
       
-      <h3>🔁 Boucle Pour</h3>
-      <pre><code>Pour variable <- debut à fin Faire
+      <h3>🔁 Boucle Pour avec Pas</h3>
+      <pre><code>Pour variable <- debut à fin [Pas valeur] Faire
     // Instructions à répéter
 FinPour</code></pre>
       
-      <p><strong>Exemple :</strong></p>
-      <pre><code>Pour i <- 1 à 10 Faire
-    Ecrire("Nombre : ", i)
+      <p><strong>Exemples Variés :</strong></p>
+      <pre><code>// Incrément de 1
+Pour i <- 1 à 10 Faire
+    Ecrire(i)
+FinPour
+
+// Incrément de 2
+Pour i <- 0 à 10 Pas 2 Faire
+    Ecrire(i)  // 0, 2, 4, 6, 8, 10
+FinPour
+
+// Décrément
+Pour i <- 10 à 1 Pas -1 Faire
+    Ecrire(i)  // 10, 9, 8, ..., 1
 FinPour</code></pre>
       
-      <h3>🔄 Boucle Tant Que</h3>
-      <pre><code>Tant que condition Faire
-    // Instructions à répéter
-FinTantQue</code></pre>
-      
-      <p><strong>Exemple :</strong></p>
-      <pre><code>Tant que x < 100 Faire
-    x <- x * 2
-    Ecrire(x)
-FinTantQue</code></pre>
-      
-      <h3>🔃 Boucle Répéter</h3>
-      <pre><code>Repeter
-    // Instructions à répéter
-Jusqu'a condition</code></pre>
-      
-      <p><strong>Exemple :</strong></p>
-      <pre><code>Repeter
-    Lire(nombre)
-    Ecrire("Vous avez saisi : ", nombre)
-Jusqu'a nombre = 0</code></pre>
+      <h3>⏹️ Rupture de Boucle</h3>
+      <pre><code>Pour i <- 1 à 100 Faire
+    Si i = 50 Alors
+        Sortir  // Quitte la boucle
+    FinSi
+    Ecrire(i)
+FinPour</code></pre>
     </div>
   </div>
 
   <!-- 7. Fonctions Mathématiques -->
   <div class="panel-container" id="fonctions">
     <div class="panel-title">
-      <span>7. Fonctions Mathématiques</span>
+      <span>9. 🧮 Fonctions Mathématiques</span>
     </div>
     <div class="panel-content">
-      <h3>📐 Fonctions à 1 Paramètre</h3>
+      <h3>17 Fonctions Mathématiques Disponibles</h3>
+      
+      <h4>📐 Fonctions à 1 Paramètre</h4>
       <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
         <thead>
           <tr style="background: #667eea; color: white;">
@@ -284,13 +443,13 @@ Jusqu'a nombre = 0</code></pre>
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>Absolu</strong></td>
             <td style="padding: 10px; border: 1px solid #ddd;"><code>Absolu(x)</code></td>
             <td style="padding: 10px; border: 1px solid #ddd;">Valeur absolue</td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Absolu(-5)</code> → 5</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Absolu(-5.5)</code> → 5.5</td>
           </tr>
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>Racine</strong></td>
             <td style="padding: 10px; border: 1px solid #ddd;"><code>Racine(x)</code></td>
             <td style="padding: 10px; border: 1px solid #ddd;">Racine carrée</td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>Racine(16)</code> → 4</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Racine(25)</code> → 5</td>
           </tr>
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>Cos</strong></td>
@@ -310,10 +469,28 @@ Jusqu'a nombre = 0</code></pre>
             <td style="padding: 10px; border: 1px solid #ddd;">Tangente (radians)</td>
             <td style="padding: 10px; border: 1px solid #ddd;"><code>Tan(0)</code> → 0</td>
           </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Arrondi</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Arrondi(x)</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Arrondi à l'entier</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Arrondi(3.7)</code> → 4</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Logarithme</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Logarithme(x)</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Logarithme naturel</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Logarithme(1)</code> → 0</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Exponentielle</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Exponentielle(x)</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Fonction exponentielle</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Exponentielle(1)</code> → 2.718</td>
+          </tr>
         </tbody>
       </table>
       
-      <h3>🔢 Fonctions à 2 Paramètres</h3>
+      <h4>🔢 Fonctions à 2 Paramètres</h4>
       <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
         <thead>
           <tr style="background: #764ba2; color: white;">
@@ -342,6 +519,32 @@ Jusqu'a nombre = 0</code></pre>
             <td style="padding: 10px; border: 1px solid #ddd;">x élevé à la puissance y</td>
             <td style="padding: 10px; border: 1px solid #ddd;"><code>Puissance(2, 3)</code> → 8</td>
           </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Modulo</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Modulo(x, y)</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Reste de la division</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Modulo(10, 3)</code> → 1</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>🎲 Fonctions Spéciales</h4>
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+          <tr style="background: #e53e3e; color: white;">
+            <th style="padding: 10px; border: 1px solid #ddd;">Fonction</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Syntaxe</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Description</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Exemple</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Alea</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Alea()</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Nombre aléatoire 0-1</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Alea()</code> → 0.784</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -350,89 +553,85 @@ Jusqu'a nombre = 0</code></pre>
   <!-- 8. Variables et Types -->
   <div class="panel-container" id="variables">
     <div class="panel-title">
-      <span>8. Variables et Types</span>
+      <span>10. Variables et Types</span>
     </div>
     <div class="panel-content">
-      <h3>Déclaration de Variables</h3>
+      <h3>Déclaration de Variables Avancée</h3>
       <pre><code>Variables
-    nom_variable : type</code></pre>
+    // Déclarations simples
+    nom_variable : type
+    
+    // Déclarations multiples
+    var1, var2, var3 : type
+    
+    // Initialisation
+    variable : type <- valeur</code></pre>
       
-      <h3>Types Disponibles</h3>
+      <h3>Types Disponibles Étendus</h3>
       <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
         <thead>
           <tr style="background: #667eea; color: white;">
             <th style="padding: 10px; border: 1px solid #ddd;">Type</th>
             <th style="padding: 10px; border: 1px solid #ddd;">Description</th>
-            <th style="padding: 10px; border: 1px solid #ddd;">Exemple de Valeur</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Valeurs</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>entier</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Nombre entier</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">42, -17, 0</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Nombre entier signé 32-bit</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">-2³¹ à 2³¹-1</td>
           </tr>
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>reel</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Nombre décimal</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">3.14, -0.5, 2.0</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Nombre décimal double précision</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">±5.0×10⁻³²⁴ à ±1.7×10³⁰⁸</td>
           </tr>
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>chaine</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Texte</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">"Bonjour", "AlgoCraft"</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Texte Unicode</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Jusqu'à 2³¹ caractères</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>booléen</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Valeur logique</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Vrai, Faux</td>
           </tr>
         </tbody>
       </table>
-      
-      <h3>Affectation</h3>
-      <pre><code>variable <- valeur</code></pre>
-      
-      <p><strong>Exemples :</strong></p>
-      <pre><code>Variables
-    age : entier
-    prix : reel
-    nom : chaine
-    
-Debut
-    age <- 25
-    prix <- 19.99
-    nom <- "Alice"
-Fin</code></pre>
     </div>
   </div>
 
   <!-- 9. Exécution et Débogage -->
   <div class="panel-container" id="execution">
     <div class="panel-title">
-      <span>9. Exécution et Débogage</span>
+      <span>11. Exécution et Débogage</span>
     </div>
     <div class="panel-content">
       <h3>Exécuter un Programme</h3>
       <ol>
         <li>Écrivez votre algorithme</li>
-        <li>Cliquez sur <strong>▶️ Tester</strong> ou <code>Menu → Exécuter</code></li>
+        <li>Cliquez sur <strong>▶️ Tester</strong> ou <code>Menu → Exécuter</code> ou <code>F5</code></li>
         <li>Consultez les résultats dans la <strong>Console</strong></li>
         <li>Vérifiez les éventuelles erreurs dans la <strong>Zone d'erreurs</strong></li>
       </ol>
       
-      <h3>Lecture de Données</h3>
-      <pre><code>Lire(variable)</code></pre>
-      <p>Une boîte de dialogue s'affiche pour saisir la valeur.</p>
-      
-      <h3>Affichage de Données</h3>
+      <h3>Affichage de Données Avancé</h3>
       <pre><code>Ecrire(element1, element2, ...)</code></pre>
       
       <p><strong>Exemples :</strong></p>
       <pre><code>Ecrire("Bonjour")
 Ecrire("Résultat : ", x)
-Ecrire("x = ", x, " et y = ", y)</code></pre>
+Ecrire("x = ", x, " et y = ", y)
+Ecrire("Calcul : ", 2 * x + 5)</code></pre>
       
       <h3>Comprendre les Erreurs</h3>
       <ul>
         <li><strong>❌ Variable non déclarée</strong> → Déclarez la variable dans la section <code>Variables</code></li>
         <li><strong>❌ FinSi manquant</strong> → Ajoutez <code>FinSi</code> après votre bloc conditionnel</li>
         <li><strong>❌ Syntaxe invalide</strong> → Vérifiez la structure : <code>Si condition Alors</code></li>
+        <li><strong>❌ Type incompatible</strong> → Vérifiez les types dans les opérations</li>
+        <li><strong>❌ Division par zéro</strong> → Vérifiez les dénominateurs</li>
       </ul>
     </div>
   </div>
@@ -440,11 +639,11 @@ Ecrire("x = ", x, " et y = ", y)</code></pre>
   <!-- 10. Personnalisation -->
   <div class="panel-container" id="personnalisation">
     <div class="panel-title">
-      <span>10. Personnalisation</span>
+      <span>12. Personnalisation</span>
     </div>
     <div class="panel-content">
       <h3>Thèmes de Couleurs</h3>
-      <p><strong>Menu</strong> : <code>Affichage → Activer le mode sombre</code></p>
+      <p><strong>Menu</strong> : <code>Affichage → Thèmes</code></p>
       
       <ul>
         <li><strong>🌙 Blue Night</strong> : Fond bleu nuit, idéal pour les sessions nocturnes</li>
@@ -452,10 +651,12 @@ Ecrire("x = ", x, " et y = ", y)</code></pre>
         <li><strong>☀️ White</strong> : Fond blanc classique, mode par défaut</li>
       </ul>
       
-      <h3>Panneaux Latéraux</h3>
+      <h3>Panneaux Latéraux Intelligents</h3>
       <ul>
-        <li><strong>🔁 Boucles</strong> : Boutons rapides pour insérer Pour, Tant que, Répéter</li>
-        <li><strong>🧮 Fonctions Mathématiques</strong> : Insertion rapide d'Absolu, Racine, Cos, Sin, Tan, Maximum, Minimum, Puissance</li>
+        <li><strong>🔁 Structures de Contrôle</strong> : Boutons rapides pour insérer Si, Pour, Tant que, Répéter</li>
+        <li><strong>🧮 Fonctions Mathématiques</strong> : Insertion rapide des 17 fonctions</li>
+        <li><strong>💾 Gestion de Projets</strong> : Accès rapide aux projets récents</li>
+        <li><strong>🌍 Traduction</strong> : Boutons directs pour chaque langage</li>
       </ul>
     </div>
   </div>
@@ -463,7 +664,7 @@ Ecrire("x = ", x, " et y = ", y)</code></pre>
   <!-- 11. Partage de Code -->
   <div class="panel-container" id="partage">
     <div class="panel-title">
-      <span>11. Partage de Code</span>
+      <span>13. Partage de Code</span>
     </div>
     <div class="panel-content">
       <h3>Partager votre Algorithme</h3>
@@ -474,12 +675,15 @@ Ecrire("x = ", x, " et y = ", y)</code></pre>
         <li><strong>WhatsApp</strong> : Partage direct sur WhatsApp Web</li>
         <li><strong>Telegram</strong> : Envoi via Telegram Web</li>
         <li><strong>Gmail</strong> : Création d'un email avec le code</li>
+        <li><strong>PDF</strong> : Export avec mise en forme professionnelle</li>
+        <li><strong>Texte/HTML</strong> : Formats multiples pour documentation</li>
       </ol>
       
       <h3>📄 Types de Partage</h3>
       <ul>
         <li><strong>Code actuel</strong> : Partage le code dans l'éditeur</li>
         <li><strong>Fichier existant</strong> : Sélectionne un fichier <code>.agc</code> à partager</li>
+        <li><strong>Traduction</strong> : Partage le code traduit dans le langage choisi</li>
       </ul>
     </div>
   </div>
@@ -487,7 +691,7 @@ Ecrire("x = ", x, " et y = ", y)</code></pre>
   <!-- 12. Raccourcis Clavier -->
   <div class="panel-container" id="raccourcis">
     <div class="panel-title">
-      <span>12. Raccourcis Clavier</span>
+      <span>14. Raccourcis Clavier</span>
     </div>
     <div class="panel-content">
       <h3>Gestion de Fichiers</h3>
@@ -529,24 +733,36 @@ Ecrire("x = ", x, " et y = ", y)</code></pre>
         <tbody>
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + C</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Copier ligne</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Copier</td>
           </tr>
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + X</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Couper ligne</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Couper</td>
           </tr>
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + V</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Coller ligne</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Coller</td>
           </tr>
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + A</code></td>
             <td style="padding: 10px; border: 1px solid #ddd;">Tout sélectionner</td>
           </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + Z</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Annuler</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + Y</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Refaire</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + Espace</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Auto-complétion</td>
+          </tr>
         </tbody>
       </table>
       
-      <h3>Exécution</h3>
+      <h3>Exécution et Navigation</h3>
       <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
         <thead>
           <tr style="background: #667eea; color: white;">
@@ -559,6 +775,18 @@ Ecrire("x = ", x, " et y = ", y)</code></pre>
             <td style="padding: 10px; border: 1px solid #ddd;"><code>F5</code></td>
             <td style="padding: 10px; border: 1px solid #ddd;">Exécuter/Tester</td>
           </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + F</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Rechercher</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + H</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Remplacer</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><code>Ctrl + G</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Aller à la ligne</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -567,150 +795,128 @@ Ecrire("x = ", x, " et y = ", y)</code></pre>
   <!-- 13. Exemples Pratiques -->
   <div class="panel-container" id="exemples">
     <div class="panel-title">
-      <span>13. Exemples Pratiques</span>
+      <span>15. Exemples Pratiques</span>
     </div>
     <div class="panel-content">
-      <h3>🔢 Exemple 1 : Calcul de Moyenne</h3>
-      <pre><code>Algorithme calcul_moyenne
+      <h3>🔢 Exemple 1 : Calcul de Moyenne avec Validation</h3>
+      <pre><code>Algorithme calcul_moyenne_avance
 Variables
-    note1 : reel
-    note2 : reel
-    note3 : reel
+    note1, note2, note3 : reel
     moyenne : reel
     
 Debut
-    Ecrire("=== CALCUL DE MOYENNE ===")
+    Ecrire("=== CALCUL DE MOYENNE AVANCÉ ===")
     
-    Ecrire("Entrez la note 1 :")
-    Lire(note1)
+    Repeter
+        Ecrire("Entrez la note 1 (0-20) :")
+        Lire(note1)
+    Jusqu'a note1 >= 0 ET note1 <= 20
     
-    Ecrire("Entrez la note 2 :")
-    Lire(note2)
+    Repeter
+        Ecrire("Entrez la note 2 (0-20) :")
+        Lire(note2)
+    Jusqu'a note2 >= 0 ET note2 <= 20
     
-    Ecrire("Entrez la note 3 :")
-    Lire(note3)
+    Repeter
+        Ecrire("Entrez la note 3 (0-20) :")
+        Lire(note3)
+    Jusqu'a note3 >= 0 ET note3 <= 20
     
     moyenne <- (note1 + note2 + note3) / 3
     
-    Ecrire("Moyenne : ", moyenne)
+    Ecrire("Moyenne : ", Arrondi(moyenne * 100) / 100)
     
-    Si moyenne >= 10 Alors
-        Ecrire("ADMIS")
+    Si moyenne >= 16 Alors
+        Ecrire("🌟 TRÈS BIEN")
+    SinonSi moyenne >= 14 Alors
+        Ecrire("👍 BIEN")
+    SinonSi moyenne >= 12 Alors
+        Ecrire("✅ ASSEZ BIEN")
+    SinonSi moyenne >= 10 Alors
+        Ecrire("➡️ PASSABLE")
     Sinon
-        Ecrire("RECALÉ")
+        Ecrire("❌ INSUFFISANT")
     FinSi
 Fin</code></pre>
       
-      <h3>🔢 Exemple 2 : Table de Multiplication</h3>
-      <pre><code>Algorithme table_multiplication
+      <h3>🎲 Exemple 2 : Jeu de Devinette Amélioré</h3>
+      <pre><code>Algorithme deviner_nombre_avance
 Variables
-    nombre : entier
-    i : entier
+    secret, essai, compteur : entier
+    min, max : entier
     
 Debut
-    Ecrire("Table de multiplication")
-    Ecrire("Entrez un nombre :")
-    Lire(nombre)
-    
-    Ecrire("===================")
-    Pour i <- 1 à 10 Faire
-        Ecrire(nombre, " x ", i, " = ", nombre * i)
-    FinPour
-Fin</code></pre>
-      
-      <h3>🎲 Exemple 3 : Deviner un Nombre</h3>
-      <pre><code>Algorithme deviner_nombre
-Variables
-    secret : entier
-    essai : entier
-    compteur : entier
-    
-Debut
-    secret <- 42
+    min <- 1
+    max <- 100
+    secret <- Alea() * (max - min) + min
     compteur <- 0
     
     Ecrire("=== JEU : DEVINEZ LE NOMBRE ===")
-    Ecrire("J'ai choisi un nombre entre 1 et 100")
+    Ecrire("J'ai choisi un nombre entre ", min, " et ", max)
     
     Repeter
-        Ecrire("Votre essai :")
+        Ecrire("Votre essai (", min, "-", max, ") :")
         Lire(essai)
         compteur <- compteur + 1
         
         Si essai < secret Alors
             Ecrire("Trop petit !")
-        FinSi
-        
-        Si essai > secret Alors
+            min <- Maximum(min, essai + 1)
+        SinonSi essai > secret Alors
             Ecrire("Trop grand !")
+            max <- Minimum(max, essai - 1)
         FinSi
     Jusqu'a essai = secret
     
-    Ecrire("BRAVO ! Trouvé en ", compteur, " essais !")
+    Ecrire("🎉 BRAVO ! Trouvé en ", compteur, " essais !")
+    
+    Si compteur <= 5 Alors
+        Ecrire("🏆 Excellent !")
+    SinonSi compteur <= 10 Alors
+        Ecrire("👍 Très bien !")
+    Sinon
+        Ecrire("✅ Bien joué !")
+    FinSi
 Fin</code></pre>
       
-      <h3>📐 Exemple 4 : Calculs Géométriques</h3>
-      <pre><code>Algorithme geometrie
+      <h3>🧮 Exemple 3 : Calculs Scientifiques Complets</h3>
+      <pre><code>Algorithme calculs_scientifiques
 Variables
-    rayon : reel
-    cote : reel
-    perimetre : reel
-    aire : reel
-    pi : reel
+    angle, resultat : reel
     
 Debut
-    pi <- 3.14159
+    Ecrire("=== CALCULS SCIENTIFIQUES ===")
     
-    // Cercle
-    Ecrire("=== CERCLE ===")
-    Ecrire("Rayon du cercle :")
-    Lire(rayon)
-    
-    perimetre <- 2 * pi * rayon
-    aire <- pi * Puissance(rayon, 2)
-    
-    Ecrire("Périmètre : ", perimetre)
-    Ecrire("Aire : ", aire)
-    
-    // Carré
+    // Conversion degrés/radians
     Ecrire("")
-    Ecrire("=== CARRÉ ===")
-    Ecrire("Côté du carré :")
-    Lire(cote)
+    Ecrire("Conversion d'angles :")
+    angle <- 45
+    Ecrire(angle, " degrés = ", Radians(angle), " radians")
+    Ecrire(Radians(angle), " radians = ", Degres(Radians(angle)), " degrés")
     
-    perimetre <- 4 * cote
-    aire <- Puissance(cote, 2)
+    // Fonctions trigonométriques
+    Ecrire("")
+    Ecrire("Fonctions trigonométriques :")
+    resultat <- Sin(Radians(30))
+    Ecrire("Sin(30°) = ", resultat)
+    resultat <- Cos(Radians(60))
+    Ecrire("Cos(60°) = ", resultat)
+    resultat <- Tan(Radians(45))
+    Ecrire("Tan(45°) = ", resultat)
     
-    Ecrire("Périmètre : ", perimetre)
-    Ecrire("Aire : ", aire)
-Fin</code></pre>
-      
-      <h3>🧮 Exemple 5 : Fonctions Mathématiques</h3>
-      <pre><code>Algorithme test_fonctions_math
-Variables
-    a : entier
-    b : entier
-    resultat : reel
+    // Fonctions avancées
+    Ecrire("")
+    Ecrire("Fonctions avancées :")
+    Ecrire("Racine(144) = ", Racine(144))
+    Ecrire("Puissance(2, 8) = ", Puissance(2, 8))
+    Ecrire("Exponentielle(1) = ", Exponentielle(1))
+    Ecrire("Logarithme(10) = ", Logarithme(10))
     
-Debut
-    a <- 16
-    b <- 9
-    
-    // Racine carrée
-    resultat <- Racine(a) + Racine(b)
-    Ecrire("Racine(16) + Racine(9) = ", resultat)
-    
-    // Puissance
-    resultat <- Puissance(2, 5)
-    Ecrire("2^5 = ", resultat)
-    
-    // Maximum
-    resultat <- Maximum(Absolu(-10), Absolu(7))
-    Ecrire("Maximum(|-10|, |7|) = ", resultat)
-    
-    // Minimum
-    resultat <- Minimum(25, 30)
-    Ecrire("Minimum(25, 30) = ", resultat)
+    // Calculs complexes
+    Ecrire("")
+    Ecrire("Calculs complexes :")
+    resultat <- Racine(Puissance(3, 2) + Puissance(4, 2))
+    Ecrire("Racine(3² + 4²) = ", resultat)
 Fin</code></pre>
     </div>
   </div>
@@ -718,7 +924,7 @@ Fin</code></pre>
   <!-- 14. Dépannage -->
   <div class="panel-container" id="depannage">
     <div class="panel-title">
-      <span>14. Dépannage</span>
+      <span>16. Dépannage</span>
     </div>
     <div class="panel-content">
       <h3>Problèmes Courants</h3>
@@ -737,25 +943,18 @@ Fin</code></pre>
         <li>Regardez les messages d'erreur détaillés</li>
       </ul>
       
-      <h4>❓ Les fonctions mathématiques ne fonctionnent pas</h4>
-      <ul>
-        <li>Vérifiez la syntaxe : <code>Maximum(x, y)</code> avec virgule</li>
-        <li>Assurez-vous que les paramètres sont numériques</li>
-        <li>Utilisez des variables déclarées</li>
-      </ul>
-      
       <h4>❓ L'auto-complétion ne s'affiche pas</h4>
       <ul>
-        <li>Vérifiez la connexion à la base de données</li>
+        <li>Appuyez sur <code>Ctrl + Espace</code> pour forcer l'affichage</li>
         <li>Tapez quelques caractères pour déclencher l'auto-complétion</li>
         <li>Redémarrez l'application</li>
       </ul>
       
-      <h4>❓ Impossible de sauvegarder</h4>
+      <h4>❓ La traduction ne fonctionne pas</h4>
       <ul>
-        <li>Vérifiez les droits d'accès au dossier</li>
-        <li>Assurez-vous que le disque n'est pas plein</li>
-        <li>Utilisez un chemin sans caractères spéciaux</li>
+        <li>Vérifiez que l'algorithme est syntaxiquement correct</li>
+        <li>Assurez-vous d'avoir sélectionné un langage cible</li>
+        <li>Redémarrez l'application</li>
       </ul>
       
       <h4>❓ Erreurs de syntaxe fréquentes</h4>
@@ -780,12 +979,12 @@ Fin</code></pre>
             <td style="padding: 10px; border: 1px solid #ddd;">Terminez chaque <code>Pour</code> par <code>FinPour</code></td>
           </tr>
           <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;">FinTantQue manquant</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Terminez chaque <code>Tant que</code> par <code>FinTantQue</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Type incompatible</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Vérifiez les types dans les opérations</td>
           </tr>
           <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;">Syntaxe invalide pour Si</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Utilisez : <code>Si condition Alors</code></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Division par zéro</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Vérifiez les dénominateurs avant division</td>
           </tr>
         </tbody>
       </table>
@@ -812,14 +1011,14 @@ Fin</code></pre>
       <h3>Contribuer</h3>
       <p>AlgoCraft est un logiciel libre. Les contributions sont les bienvenues !</p>
       
-      <h3>Apprendre l'Algorithmique</h3>
-      <p><strong>Conseils pour Débutants :</strong></p>
+      <h3>Conseils pour Apprendre</h3>
+      <p><strong>Pour progresser rapidement :</strong></p>
       <ol>
         <li><strong>Commencez simple</strong> : Algorithmes basiques d'abord</li>
         <li><strong>Testez souvent</strong> : Exécutez régulièrement votre code</li>
-        <li><strong>Lisez les erreurs</strong> : Les messages d'erreur vous guident</li>
-        <li><strong>Expérimentez</strong> : N'ayez pas peur d'essayer</li>
-        <li><strong>Partagez</strong> : Montrez votre travail et apprenez des autres</li>
+        <li><strong>Utilisez l'auto-complétion</strong> : Découvrez les suggestions</li>
+        <li><strong>Explorez la traduction</strong> : Comparez avec les langages réels</li>
+        <li><strong>Expérimentez</strong> : N'ayez pas peur d'essayer de nouvelles structures</li>
       </ol>
     </div>
   </div>
@@ -832,33 +1031,23 @@ Fin</code></pre>
     <div class="panel-content">
       <h3>✨ Nouvelles fonctionnalités</h3>
       <ul>
-        <li>Interface graphique modernisée</li>
-        <li>Auto-complétion intelligente avec descriptions</li>
-        <li>Coloration syntaxique améliorée</li>
-        <li>Support des fonctions mathématiques avancées (Absolu, Racine, Cos, Sin, Tan, Maximum, Minimum, Puissance)</li>
-        <li>Partage sur réseaux sociaux (WhatsApp, Telegram, Gmail)</li>
-        <li>Thèmes de couleurs personnalisables (Blue Night, Black, White)</li>
-        <li>Animations fluides pour une meilleure expérience utilisateur</li>
-        <li>Numérotation automatique des lignes</li>
-        <li>Gestion améliorée des projets (.agc)</li>
+        <li>🌍 <strong>Traduction Multi-Langages</strong> : C#, C, Java, Python</li>
+        <li>💡 <strong>Auto-complétion Intelligente</strong> : 47 suggestions contextuelles</li>
+        <li>🧮 <strong>Fonctions Mathématiques Étendues</strong> : 17 fonctions intégrées</li>
+        <li>🎨 <strong>Interface Modernisée</strong> : Thèmes Blue Night, Black, White</li>
+        <li>📤 <strong>Partage Avancé</strong> : WhatsApp, Telegram, Gmail, PDF</li>
+        <li>💾 <strong>Gestion de Projets</strong> : Format .agc avec métadonnées</li>
+        <li>🔧 <strong>Architecture 3 Couches</strong> : DAL, BLL, UI avec injection</li>
+        <li>⚡ <strong>Performance Optimisée</strong> : Cache intelligent, exécution rapide</li>
       </ul>
       
-      <h3> Corrections</h3>
+      <h3>🐛 Corrections</h3>
       <ul>
         <li>Gestion améliorée des erreurs avec messages explicites</li>
         <li>Performance optimisée de l'interpréteur</li>
         <li>Stabilité accrue lors de l'exécution</li>
         <li>Correction des bugs de sauvegarde</li>
-      </ul>
-      
-      <h3> Évolutions Futures Envisagées</h3>
-      <ul>
-        <li>Ajout de paramètres aux fonctions personnalisées</li>
-        <li>Gestion de la visibilité (public/privé)</li>
-        <li>Support des tableaux multidimensionnels</li>
-        <li>Débogueur pas à pas</li>
-        <li>Export en différents langages (Python, C++, Java)</li>
-        <li>Mode collaboratif en ligne</li>
+        <li>Amélioration de la coloration syntaxique</li>
       </ul>
     </div>
   </div>
@@ -866,25 +1055,24 @@ Fin</code></pre>
   <!-- Remerciements -->
   <div class="panel-container">
     <div class="panel-title">
-      <span> Remerciements</span>
+      <span>🙏 Remerciements</span>
     </div>
     <div class="panel-content">
-      <p><strong>AlgoCraft 2.0</strong> a été développé avec passion par un groupe d'étudiants.</p>
+      <p><strong>AlgoCraft 2.0</strong> a été développé avec passion par un groupe d'étudiants dévoués à l'apprentissage de l'algorithmique.</p>
       
       <h3>Remerciements spéciaux à :</h3>
       <ul>
-        <li><strong>M. NDJE MAN</strong> pour sa précieuse collaboration</li>
-        <li>Tous les utilisateurs pour leurs remarques et suggestions</li>
-        <li>La communauté open-source</li>
+        <li><strong>M. NDJE MAN</strong> pour sa précieuse collaboration et guidance</li>
+        <li>Tous les utilisateurs pour leurs retours et suggestions</li>
+        <li>La communauté open-source pour son inspiration</li>
+        <li>Les enseignants pour leur support pédagogique</li>
       </ul>
       
-      <h3> Licence</h3>
+      <h3>📄 Licence</h3>
       <p>AlgoCraft est un logiciel libre distribué sous licence ouverte.</p>
       <p><strong>Copyright © 2025/2026</strong> - Tous droits réservés.</p>
     </div>
   </div>
-
-
 
   <!-- Formulaire de contact -->
   <div id="contact-section" class="container">
