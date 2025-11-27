@@ -1,4 +1,44 @@
-// Fonction pour afficher ou masquer le menu sur mobile
+
+let lastScrollY = window.pageYOffset;   // position verticale précédente
+let ticking   = false;                  // pour limiter le nombre d'appels (requestAnimationFrame)
+
+function onScroll() {
+    const currentY = window.pageYOffset;
+
+    // Si on est tout en haut → la navbar doit toujours être visible
+    if (currentY <= 0) {
+        document.querySelector('.navbar').classList.remove('hidden');
+        lastScrollY = 0;
+        return;
+    }
+
+    // Décide de masquer / afficher
+    if (currentY > lastScrollY) {
+        // Scroll vers le bas → cacher
+        document.querySelector('.navbar').classList.add('hidden');
+    } else {
+        // Scroll vers le haut → montrer
+        document.querySelector('.navbar').classList.remove('hidden');
+    }
+
+    // Met à jour la dernière position connue
+    lastScrollY = currentY;
+}
+
+/* -------------------------------
+   Optimisation : requestAnimationFrame
+   ------------------------------- */
+window.addEventListener('scroll', () => {
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            onScroll();
+            ticking = false;
+        });
+        ticking = true;
+    }
+});
+
+
 function toggleMenu() {
   const navLinks = document.getElementById('nav-links');
   navLinks.classList.toggle('show');
@@ -23,33 +63,101 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 });
 
 
-// carousel
-const phrases = [
-  "Une approche réaliste et pédagogique de l'algorithmique",
-  "Un apprentissage centré sur la logique, pas sur les problèmes de syntaxe",
-  "Facile à utiliser pour les élèves et étudiants",
-  "100% conforme aux programmes scolaires",
-  "Compatible sur Windows"
+// Configuration du carousel
+const carouselTexts = [
+  "🚀 Interface intuitive et moderne",
+  "🧮 17 fonctions mathématiques intégrées",
+  "🌍 Traduction vers 4 langages de programmation",
+  "💡 Auto-complétion intelligente avec 47 suggestions",
+  "🎨 Thèmes personnalisables (Blue Night, Black, White)",
+  "📤 Partage facile sur les réseaux sociaux",
+  "💾 Gestion avancée des projets",
+  "🔧 Interpréteur pseudo-code performant",
+  "📊 Coloration syntaxique en temps réel",
+  "🔄 Système de règles de traduction extensible",
+  "💾 Sauvegarde automatique et sécurisée",
+  "📱 Interface responsive et adaptative",
+  "🎯 Apprentissage progressif de l'algorithmique",
+  "🔍 Débogage avancé avec messages explicites",
+  "🌟 Développé par des étudiants pour les étudiants"
 ];
 
-let currentIndex = 0;
-const textElement = document.getElementById("carousel-text");
+let currentSlide = 0;
+let autoSlideInterval;
 
-function updateText() {
-  textElement.style.opacity = 0;
-  setTimeout(() => {
-    textElement.textContent = phrases[currentIndex];
-    textElement.style.opacity = 1;
-  }, 300);
-}
-
+// Fonction pour changer de slide
 function changeSlide(direction) {
-  currentIndex = (currentIndex + direction + phrases.length) % phrases.length;
-  updateText();
+  // Réinitialiser le timer à chaque interaction manuelle
+  resetAutoSlide();
+  
+  currentSlide += direction;
+  
+  // Gérer les limites
+  if (currentSlide < 0) {
+    currentSlide = carouselTexts.length - 1;
+  } else if (currentSlide >= carouselTexts.length) {
+    currentSlide = 0;
+  }
+  
+  updateCarousel();
 }
 
-// Initialisation
-updateText();
+// Fonction pour mettre à jour l'affichage
+function updateCarousel() {
+  const carouselTextElement = document.getElementById('carousel-text');
+  if (carouselTextElement) {
+    carouselTextElement.textContent = carouselTexts[currentSlide];
+    
+    // Animation de fondu
+    carouselTextElement.style.opacity = '0';
+    setTimeout(() => {
+      carouselTextElement.style.opacity = '1';
+    }, 300);
+  }
+}
+
+// Fonction pour le défilement automatique
+function startAutoSlide() {
+  autoSlideInterval = setInterval(() => {
+    currentSlide = (currentSlide + 1) % carouselTexts.length;
+    updateCarousel();
+  }, 10000); // 10 secondes
+}
+
+// Fonction pour réinitialiser le défilement automatique
+function resetAutoSlide() {
+  clearInterval(autoSlideInterval);
+  startAutoSlide();
+}
+
+// Initialisation au chargement de la page
+document.addEventListener('DOMContentLoaded', function() {
+  // Afficher le premier texte
+  updateCarousel();
+  
+  // Démarrer le défilement automatique après 10 secondes
+  setTimeout(() => {
+    startAutoSlide();
+  }, 10000);
+  
+  // Pause au survol pour une meilleure UX
+  const carousel = document.querySelector('.carousel');
+  if (carousel) {
+    carousel.addEventListener('mouseenter', () => {
+      clearInterval(autoSlideInterval);
+    });
+    
+    carousel.addEventListener('mouseleave', () => {
+      startAutoSlide();
+    });
+  }
+});
+
+// Nettoyage quand la page est quittée
+window.addEventListener('beforeunload', () => {
+  clearInterval(autoSlideInterval);
+});
+
 
 
 // mise a jour 

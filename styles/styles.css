@@ -1,4 +1,4 @@
-/* Réinitialisation de base */
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +21,24 @@ body {
   background:#030927;
   padding: 10px 20px;
   color: white;
+}
+
+/* -------------------------------------------------
+   Navbar qui se cache / se montre au scroll
+   ------------------------------------------------- */
+
+.navbar {
+    position: sticky;               /* reste en haut */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;                  /* toujours au-dessus */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* État caché : on le décale complètement hors de l’écran */
+.navbar.hidden {
+    transform: translateY(-110%);   /* -110 % assure qu’il disparaisse même s’il y a un padding */
 }
 
 /* Logo */

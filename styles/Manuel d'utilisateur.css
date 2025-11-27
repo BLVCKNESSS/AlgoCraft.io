@@ -22,6 +22,83 @@ body {
   color: white;
 }
 
+
+/* -------------------------------------------------
+   Navbar qui se cache / se montre au scroll
+   ------------------------------------------------- */
+
+.navbar {
+    position: sticky;               /* reste en haut */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;                  /* toujours au-dessus */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* État caché : on le décale complètement hors de l’écran */
+.navbar.hidden {
+    transform: translateY(-110%);   /* -110 % assure qu’il disparaisse même s’il y a un padding */
+}
+
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.platforms {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: #c0cfe0;
+}
+
+.btn-download {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 25px;
+  background-color: #3399ff;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn-download span {
+  font-size: 0.9rem;
+  display: block;
+}
+
+.btn-download:hover {
+  background-color: #1f7dd1;
+}
+
+.stars {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color: #fff8b0;
+}
+
+.body{
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #2f4a60;
+  color: white;
+  line-height: 1.6;
+}
+
+
 /* Logo */
 .logo {
   font-size: 1.5rem;
